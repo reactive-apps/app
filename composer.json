@@ -6,11 +6,11 @@
         "php": "^7.1",
         "bramus/monolog-colored-line-formatter": "^2.0",
         "doctrine/annotations": "^1.4",
+        "igorw/get-in": "^1.0",
         "joshdifabio/composed": "^1.0",
         "league/tactician": "^1.0",
         "league/tactician-container": "^2.0",
         "mnapoli/silly": "^1.7",
-        "mnapoli/silly-php-di": "^1.2",
         "monolog/monolog": "^1.23",
         "php-di/php-di": "^6.0",
         "react/event-loop": "^1.0 || ^0.5",
@@ -37,7 +37,10 @@
         "reactive-apps": {
             "command": {
                 "ReactiveApps\\Command": "src/Command"
-            }
+            },
+            "di": [
+                "config/di/event-loop.php"
+            ]
         }
     },
     "config": {
