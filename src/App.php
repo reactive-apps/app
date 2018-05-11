@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ReactiveApps\App;
+namespace ReactiveApps;
 
 use ReactiveApps\CommandCreator;
 use ReactiveApps\CommandLocator;
