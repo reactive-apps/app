@@ -21,6 +21,7 @@
         "roave/better-reflection": "^2.0",
         "wyrihaximus/doctrine-annotation-autoloader": "^1.0",
         "wyrihaximus/monolog-formatted-psr-handler": "^1.0",
+        "wyrihaximus/monolog-processors": "^1.1",
         "wyrihaximus/psr-3-callable-throwable-logger": "dev-master",
         "wyrihaximus/psr-3-context-logger": "dev-master",
         "wyrihaximus/psr-3-filter": "^1.1",
@@ -39,7 +40,10 @@
                 "ReactiveApps\\Command": "src/Command"
             },
             "di": [
-                "config/di/event-loop.php"
+                "config/di/error-handler.php",
+                "config/di/event-loop.php",
+                "config/di/logger.php",
+                "config/di/recoil.php"
             ]
         }
     },

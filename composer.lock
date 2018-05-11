@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef8dab7361663ace2c32ca6e0f8cff29",
+    "content-hash": "9fb1e4e09b9db8deb2002fbf0b874700",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -602,40 +602,6 @@
                 "silly"
             ],
             "time": "2017-11-18T14:01:30+00:00"
-        },
-        {
-            "name": "mnapoli/silly-php-di",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mnapoli/silly-php-di.git",
-                "reference": "bd4af1c2cdf6141dc941a9a4728d1db4d4b01ef0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mnapoli/silly-php-di/zipball/bd4af1c2cdf6141dc941a9a4728d1db4d4b01ef0",
-                "reference": "bd4af1c2cdf6141dc941a9a4728d1db4d4b01ef0",
-                "shasum": ""
-            },
-            "require": {
-                "mnapoli/silly": "~1.1",
-                "php-di/php-di": "~4.4 || ^5.0 || ^6.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Silly\\Edition\\PhpDi\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Silly framework edition configured with PHP-DI",
-            "time": "2018-04-05T08:53:27+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2477,6 +2443,45 @@
             ],
             "description": "Passes `formatted` instead of `message` to the PSR-3 logger",
             "time": "2017-06-26T19:23:22+00:00"
+        },
+        {
+            "name": "wyrihaximus/monolog-processors",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/php-monolog-processors.git",
+                "reference": "abaef252b59f5e684d31fc3d880cfdef4b4a001c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/php-monolog-processors/zipball/abaef252b59f5e684d31fc3d880cfdef4b4a001c",
+                "reference": "abaef252b59f5e684d31fc3d880cfdef4b4a001c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^4.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\Monolog\\Processors\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Collection of additional processors for monolog",
+            "time": "2018-01-12T20:35:34+00:00"
         },
         {
             "name": "wyrihaximus/psr-3-callable-throwable-logger",
