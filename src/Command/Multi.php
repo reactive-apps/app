@@ -27,7 +27,7 @@ class Multi implements Command
     public function __invoke(array $c)
     {
         foreach (CommandLocator::locate() as $class) {
-            if (!in_array((new ReflectionClass($class))->getConstant('COMMAND'), $c)) {
+            if (!in_array((new ReflectionClass($class))->getConstant('COMMAND'), $c, true)) {
                 continue;
             }
 

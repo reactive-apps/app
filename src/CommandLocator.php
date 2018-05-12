@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace ReactiveApps;
 
@@ -24,7 +24,6 @@ final class CommandLocator
                 }
             }
         }
-
     }
 
     public static function locations(): iterable
@@ -43,7 +42,7 @@ final class CommandLocator
                 $config,
                 [
                     'reactive-apps',
-                    'command'
+                    'command',
                 ]
             );
 

@@ -2,10 +2,8 @@
 
 namespace ReactiveApps;
 
-use ReactiveApps\CommandCreator;
-use ReactiveApps\CommandLocator;
-use ReactiveApps\Rx\Shutdown;
 use React\EventLoop\LoopInterface;
+use ReactiveApps\Rx\Shutdown;
 use Silly\Application;
 
 final class App
@@ -31,8 +29,8 @@ final class App
     private $booted = false;
 
     /**
-     * @param LoopInterface $loop
-     * @param Shutdown $shutdown
+     * @param LoopInterface  $loop
+     * @param Shutdown       $shutdown
      * @param CommandCreator $commandFactory
      */
     public function __construct(LoopInterface $loop, Shutdown $shutdown, CommandCreator $commandFactory)

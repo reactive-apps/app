@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace ReactiveApps;
 
@@ -21,7 +21,7 @@ final class CommandCreator
     private $container;
 
     /**
-     * @param LoopInterface $loop
+     * @param LoopInterface      $loop
      * @param ContainerInterface $container
      */
     public function __construct(LoopInterface $loop, ContainerInterface $container)
