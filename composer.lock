@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9fb1e4e09b9db8deb2002fbf0b874700",
+    "content-hash": "248f2c99d4bad13c5e70f8b99b4c5a27",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -731,6 +731,80 @@
                 "php"
             ],
             "time": "2018-02-28T20:30:58+00:00"
+        },
+        {
+            "name": "php-di-definitions/definitions-gatherer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-DI-Definitions/definitions-gatherer.git",
+                "reference": "108b988aa5854805e1f0cb0e35f6e2eb501a77fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/definitions-gatherer/zipball/108b988aa5854805e1f0cb0e35f6e2eb501a77fb",
+                "reference": "108b988aa5854805e1f0cb0e35f6e2eb501a77fb",
+                "shasum": ""
+            },
+            "require": {
+                "igorw/get-in": "^1.0",
+                "joshdifabio/composed": "^1.0",
+                "php": "^7.1",
+                "php-di-definitions/react-event-loop": "dev-master"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPDIDefinitions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Async first Pusher client",
+            "time": "2018-05-12T19:04:24+00:00"
+        },
+        {
+            "name": "php-di-definitions/react-event-loop",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-DI-Definitions/reactphp-event-loop.git",
+                "reference": "090964077585b49a0eb897683c3c506daf276ac6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-event-loop/zipball/090964077585b49a0eb897683c3c506daf276ac6",
+                "reference": "090964077585b49a0eb897683c3c506daf276ac6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "react/event-loop": "^1.0 || ^0.5"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^4.3"
+            },
+            "type": "library",
+            "extra": {
+                "php-di-definitions": {
+                    "di": [
+                        "src/event-loop.php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2018-05-12T16:19:40+00:00"
         },
         {
             "name": "php-di/invoker",
@@ -5646,6 +5720,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "php-di-definitions/definitions-gatherer": 20,
+        "php-di-definitions/react-event-loop": 20,
         "reactive-apps/command": 20,
         "wyrihaximus/psr-3-callable-throwable-logger": 20,
         "wyrihaximus/psr-3-context-logger": 20
