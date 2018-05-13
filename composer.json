@@ -37,16 +37,17 @@
         "monolog/monolog": "^1.23"
     },
     "extra": {
-        "reactive-apps": {
-            "command": {
-                "ReactiveApps\\Command": "src/Command"
-            },
+        "php-di-definitions": {
             "di": [
                 "config/di/error-handler.php",
-                "config/di/event-loop.php",
                 "config/di/logger.php",
                 "config/di/recoil.php"
             ]
+        },
+        "reactive-apps": {
+            "command": {
+                "ReactiveApps\\Command": "src/Command"
+            }
         }
     },
     "config": {

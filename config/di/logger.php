@@ -1,8 +1,6 @@
 <?php declare(strict_types=1);
 
 use Bramus\Monolog\Formatter\ColoredLineFormatter;
-use function DI\factory;
-use function DI\get;
 use Monolog\Logger;
 use Monolog\Processor;
 use Psr\Log\LoggerInterface;
@@ -14,6 +12,8 @@ use WyriHaximus\Monolog\Processors\RuntimeProcessor;
 use WyriHaximus\Monolog\Processors\ToContextProcessor;
 use WyriHaximus\Monolog\Processors\TraceProcessor;
 use WyriHaximus\React\PSR3\Stdio\StdioLogger;
+use function DI\factory;
+use function DI\get;
 
 return (function () {
     return [
@@ -38,6 +38,7 @@ return (function () {
                 false
             ));
             $logger->pushHandler($consoleHandler);
+
             return $logger;
         })->parameter('name', get('config.app.name'))->parameter('version', get('config.app.version')),
     ];

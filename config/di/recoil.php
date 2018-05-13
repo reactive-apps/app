@@ -10,6 +10,7 @@ return (function () {
         Kernel::class => function (LoopInterface $loop, ErrorHandler $errorHandler) {
             $kernel = ReactKernel::create($loop);
             $kernel->setExceptionHandler([$errorHandler, 'handleException']);
+
             return $kernel;
         },
     ];
