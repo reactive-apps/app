@@ -2,8 +2,8 @@
 
 namespace ReactiveApps\Command;
 
-use App\CommandLocator;
 use Psr\Container\ContainerInterface;
+use ReactiveApps\CommandLocator;
 use ReflectionClass;
 
 class Multi implements Command
