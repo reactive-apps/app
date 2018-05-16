@@ -26,11 +26,6 @@ final class App
     private $application;
 
     /**
-     * @var StdioOutput
-     */
-    private $stdioOutput;
-
-    /**
      * @var bool
      */
     private $booted = false;
@@ -39,14 +34,12 @@ final class App
      * @param LoopInterface $loop
      * @param Shutdown $shutdown
      * @param Application $application
-     * @param StdioOutput $stdioOutput
      */
-    public function __construct(LoopInterface $loop, Shutdown $shutdown, Application $application, StdioOutput $stdioOutput)
+    public function __construct(LoopInterface $loop, Shutdown $shutdown, Application $application)
     {
         $this->loop = $loop;
         $this->shutdown = $shutdown;
         $this->application = $application;
-        $this->stdioOutput = $stdioOutput;
     }
 
     public function boot()
@@ -58,6 +51,6 @@ final class App
 
         $this->loop->addSignal(SIGTERM, [$this->shutdown, 'onConplete']);
 
-        $this->application->run(null, $this->stdioOutput);
+        $this->application->run(null, new StdioOutput(new Stdio($this->loop)));
     }
 }
