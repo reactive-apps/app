@@ -29,7 +29,7 @@ final class CommandLocator
     public static function locations(): iterable
     {
         /** @var Package $package */
-        foreach (packages() as $package) {
+        foreach (packages(true) as $package) {
             $config = $package->getConfig('extra');
 
             if ($config === null) {
