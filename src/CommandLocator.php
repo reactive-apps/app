@@ -28,8 +28,6 @@ final class CommandLocator
 
     public static function locations(): iterable
     {
-        yield dirname(__DIR__) . '/src/Command/' => 'App\Command';
-
         /** @var Package $package */
         foreach (packages() as $package) {
             $config = $package->getConfig('extra');
