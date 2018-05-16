@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "248f2c99d4bad13c5e70f8b99b4c5a27",
+    "content-hash": "54a5b58bbc4a89f43f0e77a4294817ad",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -738,22 +738,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/definitions-gatherer.git",
-                "reference": "108b988aa5854805e1f0cb0e35f6e2eb501a77fb"
+                "reference": "221316c6e143696fbb17d7a3822c6dc9855eb6bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/definitions-gatherer/zipball/108b988aa5854805e1f0cb0e35f6e2eb501a77fb",
-                "reference": "108b988aa5854805e1f0cb0e35f6e2eb501a77fb",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/definitions-gatherer/zipball/221316c6e143696fbb17d7a3822c6dc9855eb6bd",
+                "reference": "221316c6e143696fbb17d7a3822c6dc9855eb6bd",
                 "shasum": ""
             },
             "require": {
                 "igorw/get-in": "^1.0",
                 "joshdifabio/composed": "^1.0",
-                "php": "^7.1",
-                "php-di-definitions/react-event-loop": "dev-master"
+                "php": "^7.1"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^4.1"
+                "api-clients/test-utilities": "^4.1",
+                "php-di-definitions/react-event-loop": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -772,7 +772,7 @@
                 }
             ],
             "description": "Async first Pusher client",
-            "time": "2018-05-12T19:04:24+00:00"
+            "time": "2018-05-14T13:03:17+00:00"
         },
         {
             "name": "php-di-definitions/react-event-loop",
@@ -1615,12 +1615,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/command.git",
-                "reference": "857d6132dd2ba965f4cfb7cee730c49751247e9e"
+                "reference": "895c390f3d5501857175ee5a24357f3abea6fc4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/command/zipball/857d6132dd2ba965f4cfb7cee730c49751247e9e",
-                "reference": "857d6132dd2ba965f4cfb7cee730c49751247e9e",
+                "url": "https://api.github.com/repos/reactive-apps/command/zipball/895c390f3d5501857175ee5a24357f3abea6fc4e",
+                "reference": "895c390f3d5501857175ee5a24357f3abea6fc4e",
                 "shasum": ""
             },
             "require": {
@@ -1636,7 +1636,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2017-12-27T21:34:25+00:00"
+            "time": "2018-05-13T11:47:14+00:00"
         },
         {
             "name": "reactivex/rxphp",
@@ -2520,19 +2520,20 @@
         },
         {
             "name": "wyrihaximus/monolog-processors",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-monolog-processors.git",
-                "reference": "abaef252b59f5e684d31fc3d880cfdef4b4a001c"
+                "reference": "1492aca6028cfbffe4a94a56c6941e1d92db73a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-monolog-processors/zipball/abaef252b59f5e684d31fc3d880cfdef4b4a001c",
-                "reference": "abaef252b59f5e684d31fc3d880cfdef4b4a001c",
+                "url": "https://api.github.com/repos/WyriHaximus/php-monolog-processors/zipball/1492aca6028cfbffe4a94a56c6941e1d92db73a1",
+                "reference": "1492aca6028cfbffe4a94a56c6941e1d92db73a1",
                 "shasum": ""
             },
             "require": {
+                "igorw/get-in": "^1.0",
                 "php": "^7.0"
             },
             "require-dev": {
@@ -2555,7 +2556,7 @@
                 }
             ],
             "description": "Collection of additional processors for monolog",
-            "time": "2018-01-12T20:35:34+00:00"
+            "time": "2018-05-13T11:32:40+00:00"
         },
         {
             "name": "wyrihaximus/psr-3-callable-throwable-logger",

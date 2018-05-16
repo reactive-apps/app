@@ -39,6 +39,7 @@
     "extra": {
         "php-di-definitions": {
             "di": [
+                "config/di/app.php",
                 "config/di/error-handler.php",
                 "config/di/logger.php",
                 "config/di/recoil.php"

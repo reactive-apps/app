@@ -19,9 +19,9 @@ final class App
     private $shutdown;
 
     /**
-     * @var CommandCreator
+     * @var Application
      */
-    private $commandFactory;
+    private $application;
 
     /**
      * @var bool
@@ -29,15 +29,15 @@ final class App
     private $booted = false;
 
     /**
-     * @param LoopInterface  $loop
-     * @param Shutdown       $shutdown
-     * @param CommandCreator $commandFactory
+     * @param LoopInterface $loop
+     * @param Shutdown $shutdown
+     * @param Application $application
      */
-    public function __construct(LoopInterface $loop, Shutdown $shutdown, CommandCreator $commandFactory)
+    public function __construct(LoopInterface $loop, Shutdown $shutdown, Application $application)
     {
         $this->loop = $loop;
         $this->shutdown = $shutdown;
-        $this->commandFactory = $commandFactory;
+        $this->application = $application;
     }
 
     public function boot()
@@ -49,13 +49,7 @@ final class App
 
         $this->loop->addSignal(SIGTERM, [$this->shutdown, 'onConplete']);
 
-        $app = new Application('app name', 'dev');
-        foreach (CommandLocator::locate() as $class) {
-            $app->command(...$this->commandFactory->create($class));
-        }
-        $this->commandFactory = null;
-
-        //$app->run(null, $output);
-        $app->run(null, null);
+        //$this->application->run(null, $output);
+        $this->application->run(null, null);
     }
 }
