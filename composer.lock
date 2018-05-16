@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "54a5b58bbc4a89f43f0e77a4294817ad",
+    "content-hash": "bd1656eebab86ea37acf45ca9ed710af",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -2560,7 +2560,7 @@
         },
         {
             "name": "wyrihaximus/psr-3-callable-throwable-logger",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-psr-3-callable-throwable-logger.git",
@@ -2605,7 +2605,7 @@
         },
         {
             "name": "wyrihaximus/psr-3-context-logger",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-psr-3-context-logger.git",
@@ -5723,9 +5723,7 @@
     "stability-flags": {
         "php-di-definitions/definitions-gatherer": 20,
         "php-di-definitions/react-event-loop": 20,
-        "reactive-apps/command": 20,
-        "wyrihaximus/psr-3-callable-throwable-logger": 20,
-        "wyrihaximus/psr-3-context-logger": 20
+        "reactive-apps/command": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
