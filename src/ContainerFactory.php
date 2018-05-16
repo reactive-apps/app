@@ -11,14 +11,10 @@ final class ContainerFactory
     public static function create(): ContainerInterface
     {
         $definitions = iterator_to_array(DefinitionsGatherer::gather());
-        //$version = trim(file_exists(ROOT . 'version') ? file_get_contents(ROOT . 'version') : 'dev');
         $container = new ContainerBuilder();
-        //$definitions['app.version'] = $version;
-        $definitions['config'] = [
-            'foo' => [
-                'bar' => 'baz',
-            ],
-        ];
+        foreach (ConfigurationLocator::locate() as $key => $value) {
+            $definitions['config.' . $key] = $value;
+        }
 
         $container->addDefinitions($definitions);
 
