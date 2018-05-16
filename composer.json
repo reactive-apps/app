@@ -3,7 +3,7 @@
     "prefer-stable": true,
     "name": "reactive-apps/app",
     "require": {
-        "php": "^7.1",
+        "php": "^7.2",
         "bramus/monolog-colored-line-formatter": "^2.0",
         "doctrine/annotations": "^1.4",
         "igorw/get-in": "^1.0",
@@ -29,11 +29,12 @@
         "wyrihaximus/psr-3-filter": "^1.1",
         "wyrihaximus/react-psr-3-loggly": "^2.0",
         "wyrihaximus/react-psr-3-stdio": "^2.0",
+        "wyrihaximus/react-stdio-symfony-console": "dev-master",
         "wyrihaximus/tactician-command-handler-mapper": "^1.0",
         "wyrihaximus/tactician-job-command-mapper": "^1.0"
     },
     "require-dev": {
-        "api-clients/test-utilities": "^4.2",
+        "api-clients/test-utilities": "^4.3",
         "monolog/monolog": "^1.23"
     },
     "extra": {
@@ -54,7 +55,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "7.1"
+            "php": "7.2"
         }
     },
     "autoload": {

@@ -5,6 +5,7 @@ namespace ReactiveApps;
 use React\EventLoop\LoopInterface;
 use ReactiveApps\Rx\Shutdown;
 use Silly\Application;
+use WyriHaximus\React\Symfony\Console\StdioOutput;
 
 final class App
 {
@@ -49,7 +50,6 @@ final class App
 
         $this->loop->addSignal(SIGTERM, [$this->shutdown, 'onConplete']);
 
-        //$this->application->run(null, $output);
-        $this->application->run(null, null);
+        $this->application->run(null, new StdioOutput($this->loop));
     }
 }
