@@ -57,6 +57,9 @@ final class App
         $this->booted = true;
 
         $this->loop->addSignal(SIGTERM, [$this->shutdown, 'onConplete']);
+        $this->shutdown->subscribe(null, null, function () {
+            $this->loop->removeSignal(SIGTERM, [$this->shutdown, 'onConplete']);
+        });
 
         $this->application->run(new ArgvInput($argv), $this->output);
     }
