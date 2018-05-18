@@ -8,7 +8,7 @@ use WyriHaximus\React\Symfony\Console\StdioOutput;
 return (function () {
     return [
         OutputInterface::class => function (LoopInterface $loop) {
-            return new StdioOutput(new Stdio($loop));
+            return new StdioOutput(new Stdio($loop), StdioOutput::VERBOSITY_NORMAL, true);
         },
     ];
 })();

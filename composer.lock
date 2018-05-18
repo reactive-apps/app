@@ -3014,12 +3014,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/reactphp-stdio-symfony-console.git",
-                "reference": "d386f9c7f460ecdabb7f1227dbf0fd2dfa55feba"
+                "reference": "493d6aaa022d2cf7d5e36cd3260feee7eb10a79a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-stdio-symfony-console/zipball/d386f9c7f460ecdabb7f1227dbf0fd2dfa55feba",
-                "reference": "d386f9c7f460ecdabb7f1227dbf0fd2dfa55feba",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-stdio-symfony-console/zipball/493d6aaa022d2cf7d5e36cd3260feee7eb10a79a",
+                "reference": "493d6aaa022d2cf7d5e36cd3260feee7eb10a79a",
                 "shasum": ""
             },
             "require": {
@@ -3037,7 +3037,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-05-16T20:58:42+00:00"
+            "time": "2018-05-18T06:02:25+00:00"
         },
         {
             "name": "wyrihaximus/tactician-command-handler-mapper",
