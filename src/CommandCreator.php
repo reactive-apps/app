@@ -50,7 +50,7 @@ final class CommandCreator
         }
 
         $eval = 'return function (' . implode(', ', $parameters) . ') use ($class, $container, $loop, $recoil) {
-            $recoil->execute(function () {
+            $recoil->execute(function () use ($class, $container, $loop) {
                 yield $container->get($class)(...func_get_args());
             });
             $loop->run();
