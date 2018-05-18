@@ -2,12 +2,11 @@
 
 namespace ReactiveApps;
 
-use Clue\React\Stdio\Stdio;
 use React\EventLoop\LoopInterface;
 use ReactiveApps\Rx\Shutdown;
 use Silly\Application;
+use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\OutputInterface;
-use WyriHaximus\React\Symfony\Console\StdioOutput;
 
 final class App
 {
@@ -50,7 +49,7 @@ final class App
         $this->output = $output;
     }
 
-    public function boot()
+    public function boot(array $argv)
     {
         if ($this->booted === true) {
             return;
@@ -59,6 +58,6 @@ final class App
 
         $this->loop->addSignal(SIGTERM, [$this->shutdown, 'onConplete']);
 
-        $this->application->run(null, $this->output);
+        $this->application->run(new ArgvInput($argv), $this->output);
     }
 }
