@@ -68,13 +68,18 @@ final class App
 
     private function setUpSignals()
     {
+        $handler = function () {
+            $this->shutdown->onCompleted();
+        };
+
         foreach (self::SIGNALS as $signal) {
-            $this->loop->addSignal($signal, [$this->shutdown, 'onConplete']);
-            $this->shutdown->subscribe(null, null, function () {
-                foreach (self::SIGNALS as $signal) {
-                    $this->loop->removeSignal($signal, [$this->shutdown, 'onConplete']);
-                }
-            });
+            $this->loop->addSignal($signal, $handler);
         }
+
+        $this->shutdown->subscribe(null, null, function () use ($handler) {
+            foreach (self::SIGNALS as $signal) {
+                $this->loop->removeSignal($signal, $handler);
+            }
+        });
     }
 }
