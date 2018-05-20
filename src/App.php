@@ -10,6 +10,12 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 final class App
 {
+    private const SIGNALS = [
+        SIGTERM,
+        SIGINT,
+        SIGKILL,
+    ];
+
     /**
      * @var LoopInterface
      */
@@ -56,11 +62,20 @@ final class App
         }
         $this->booted = true;
 
-        $this->loop->addSignal(SIGTERM, [$this->shutdown, 'onConplete']);
-        $this->shutdown->subscribe(null, null, function () {
-            $this->loop->removeSignal(SIGTERM, [$this->shutdown, 'onConplete']);
-        });
+        $this->setUpSignals();
 
         $this->application->run(new ArgvInput($argv), $this->output);
+    }
+
+    private function setUpSignals()
+    {
+        foreach (self::SIGNALS as $signal) {
+            $this->loop->addSignal($signal, [$this->shutdown, 'onConplete']);
+            $this->shutdown->subscribe(null, null, function () {
+                foreach (self::SIGNALS as $signal) {
+                    $this->loop->removeSignal($signal, [$this->shutdown, 'onConplete']);
+                }
+            });
+        }
     }
 }
