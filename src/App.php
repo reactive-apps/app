@@ -13,7 +13,6 @@ final class App
     private const SIGNALS = [
         SIGTERM,
         SIGINT,
-        SIGKILL,
     ];
 
     /**
