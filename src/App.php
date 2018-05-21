@@ -70,13 +70,12 @@ final class App
 
     public function boot(array $argv)
     {
-        $this->logger->emergency('Booting');
         if ($this->booted === true) {
             $this->logger->emergency('Can\'t be booted twice');
             return;
         }
         $this->booted = true;
-        $this->logger->emergency('Booting');
+        $this->logger->debug('Booting');
 
         $this->setUpSignals();
 
