@@ -13,6 +13,7 @@ return (function () {
             foreach (CommandLocator::locate() as $class) {
                 $app->command(...$commandFactory->create($class));
             }
+            $app->setAutoExit(false);
             return $app;
         })
         ->parameter('name', \DI\get('config.app.name'))
