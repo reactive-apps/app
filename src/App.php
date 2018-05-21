@@ -63,7 +63,15 @@ final class App
 
         $this->setUpSignals();
 
-        $this->application->run(new ArgvInput($argv), $this->output);
+        $this->loop->futureTick(function () use ($argv) {
+            try {
+                $this->application->run(new ArgvInput($argv), $this->output);
+            } catch (\Throwable $et) {
+                echo (string)$et;
+            }
+        });
+
+        $this->loop->run();
     }
 
     private function setUpSignals()
