@@ -92,7 +92,7 @@ final class App
 
         $this->logger->debug('Starting loop');
         $this->loop->run();
-        $this->logger->debug('Execution completed with exit code' . $exitCode);
+        $this->logger->debug('Execution completed with exit code: ' . $exitCode);
 
         return $exitCode;
     }
