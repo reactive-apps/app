@@ -102,6 +102,7 @@ final class App
         $this->logger->debug('Setting up signals');
 
         $handler = function () {
+            $this->logger->debug('Caught signal');
             $this->shutdown->onCompleted();
         };
 
