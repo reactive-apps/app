@@ -1,10 +1,14 @@
 <?php declare(strict_types=1);
 
 use Bramus\Monolog\Formatter\ColoredLineFormatter;
+use Monolog\Handler\PsrHandler;
 use Monolog\Logger;
 use Monolog\Processor;
 use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
+use ReactiveApps\Rx\Shutdown;
+use Symfony\Component\Console\Logger\ConsoleLogger;
+use Symfony\Component\Console\Output\ConsoleOutput;
 use WyriHaximus\Monolog\FormattedPsrHandler\FormattedPsrHandler;
 use WyriHaximus\Monolog\Processors\ExceptionClassProcessor;
 use WyriHaximus\Monolog\Processors\KeyValueProcessor;
@@ -17,7 +21,7 @@ use function DI\get;
 
 return (function () {
     return [
-        LoggerInterface::class => factory(function (LoopInterface $loop, string $name, string $version) {
+        LoggerInterface::class => factory(function (LoopInterface $loop, Shutdown $shutdown, string $name, string $version) {
             $logger = new Logger(strtolower($name));
             $logger->pushProcessor(new ToContextProcessor());
             $logger->pushProcessor(new TraceProcessor());
@@ -38,6 +42,19 @@ return (function () {
                 false
             ));
             $logger->pushHandler($consoleHandler);
+
+            $shutdown->subscribe(null, null, function () use ($logger) {
+                $logger->setHandlers([
+                    new PsrHandler(
+                        new ConsoleLogger(
+                            new ConsoleOutput(
+                                ConsoleOutput::VERBOSITY_DEBUG,
+                                true
+                            )
+                        )
+                    ),
+                ]);
+            });
 
             return $logger;
         })->parameter('name', get('config.app.name'))->parameter('version', get('config.app.version')),
