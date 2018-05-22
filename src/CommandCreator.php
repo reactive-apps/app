@@ -41,7 +41,6 @@ final class CommandCreator
     public function create(string $class): array
     {
         $container = $this->container;
-        $loop = $this->loop;
         $recoil = $this->recoil;
         $command = (new ReflectionClass($class))->getConstant('COMMAND');
         $parameters = [];
@@ -49,14 +48,13 @@ final class CommandCreator
             $parameters[] = ((string)$parameter->getType()) . ' ' . ($parameter->isVariadic() ? '...' : '') . '$' . $parameter->getName();
         }
 
-        $eval = 'return function (' . implode(', ', $parameters) . ') use ($class, $container, $loop, $recoil) {
+        $eval = 'return function (' . implode(', ', $parameters) . ') use ($class, $container, $recoil) {
             $command = $container->get($class);
             $args = func_get_args();
             $recoil->execute(function () use ($command, $args) {
                 yield;
                 $command(...$args);
             });
-            $loop->run();
         };';
 
         //echo $eval;
