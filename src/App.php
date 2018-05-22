@@ -102,7 +102,18 @@ final class App
         $this->logger->debug('Setting up signals');
 
         $handler = function ($signal) {
-            $this->logger->debug('Caught signal: ' . $signal);
+            switch ($signal) {
+                case SIGTERM:
+                    $signalName = 'SIGTERM';
+                    break;
+                case SIGINT:
+                    $signalName = 'SIGINT';
+                    break;
+                default:
+                    $signalName = 'unknown signal';
+                    break;
+            }
+            $this->logger->debug('Caught signal: ' . $signalName);
             $this->shutdown->onCompleted();
         };
 
