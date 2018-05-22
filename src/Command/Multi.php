@@ -31,7 +31,8 @@ class Multi implements Command
                 continue;
             }
 
-            $this->container->get($class)();
+            $command = $this->container->get($class);
+            yield $command();
         }
     }
 }
