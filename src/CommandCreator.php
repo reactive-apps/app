@@ -52,8 +52,7 @@ final class CommandCreator
             $command = $container->get($class);
             $args = func_get_args();
             $recoil->execute(function () use ($command, $args) {
-                yield;
-                $command(...$args);
+                yield $command(...$args);
             });
         };';
 
