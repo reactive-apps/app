@@ -2,15 +2,13 @@
 
 namespace ReactiveApps;
 
-use Composed\Package;
-use function Composed\packages;
-use function igorw\get_in;
+use function WyriHaximus\get_in_packages_composer_with_path;
 
 final class CommandLocator
 {
     public static function locate(): iterable
     {
-        foreach (self::locations() as $path => $namespacePrefix) {
+        foreach (get_in_packages_composer_with_path('extra.reactive-apps.command') as $path => $namespacePrefix) {
             $directory = new \RecursiveDirectoryIterator($path);
             $directory = new \RecursiveIteratorIterator($directory);
             foreach ($directory as $fileinfo) {
@@ -22,34 +20,6 @@ final class CommandLocator
                 if (class_exists($class) && !(new \ReflectionClass($class))->isInterface()) {
                     yield $class;
                 }
-            }
-        }
-    }
-
-    public static function locations(): iterable
-    {
-        /** @var Package $package */
-        foreach (packages(true) as $package) {
-            $config = $package->getConfig('extra');
-
-            if ($config === null) {
-                continue;
-            }
-
-            $commands = get_in(
-                $config,
-                [
-                    'reactive-apps',
-                    'command',
-                ]
-            );
-
-            if ($commands === null) {
-                continue;
-            }
-
-            foreach ($commands as $namespace => $path) {
-                yield $package->getPath($path) => $namespace;
             }
         }
     }
