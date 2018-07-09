@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "cca5e710dc82746abe00e0877830d07c",
@@ -909,22 +909,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/definitions-gatherer.git",
-                "reference": "221316c6e143696fbb17d7a3822c6dc9855eb6bd"
+                "reference": "cc70a87f24f2143fcc8d888874fd44196ffdb4dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/definitions-gatherer/zipball/221316c6e143696fbb17d7a3822c6dc9855eb6bd",
-                "reference": "221316c6e143696fbb17d7a3822c6dc9855eb6bd",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/definitions-gatherer/zipball/cc70a87f24f2143fcc8d888874fd44196ffdb4dd",
+                "reference": "cc70a87f24f2143fcc8d888874fd44196ffdb4dd",
                 "shasum": ""
             },
             "require": {
-                "igorw/get-in": "^1.0",
-                "joshdifabio/composed": "^1.0",
-                "php": "^7.1"
+                "php": "^7.2",
+                "php-di-definitions/dummy": "dev-master",
+                "wyrihaximus/get-in-packages-composer.jason": "^1.0"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^4.1",
-                "php-di-definitions/react-event-loop": "dev-master"
+                "api-clients/test-utilities": "^4.3"
             },
             "type": "library",
             "autoload": {
@@ -943,7 +942,43 @@
                 }
             ],
             "description": "Async first Pusher client",
-            "time": "2018-05-14T13:03:17+00:00"
+            "time": "2018-06-19T20:52:58+00:00"
+        },
+        {
+            "name": "php-di-definitions/dummy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-DI-Definitions/dummy.git",
+                "reference": "3b42d8067ce37c50785b0297acede7b46706b3c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/3b42d8067ce37c50785b0297acede7b46706b3c7",
+                "reference": "3b42d8067ce37c50785b0297acede7b46706b3c7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^4.3"
+            },
+            "type": "library",
+            "extra": {
+                "php-di-definitions": {
+                    "di": [
+                        "etc/di/dummy.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PHPDIDefinitions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2018-06-25T15:46:50+00:00"
         },
         {
             "name": "php-di-definitions/react-event-loop",
@@ -1505,16 +1540,16 @@
         },
         {
             "name": "react/event-loop",
-            "version": "v0.5.2",
+            "version": "v0.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop.git",
-                "reference": "e94985d93c689c554265b01014f8c3064921ca27"
+                "reference": "228178a947de1f7cd9296d691878569628288c6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/e94985d93c689c554265b01014f8c3064921ca27",
-                "reference": "e94985d93c689c554265b01014f8c3064921ca27",
+                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/228178a947de1f7cd9296d691878569628288c6f",
+                "reference": "228178a947de1f7cd9296d691878569628288c6f",
                 "shasum": ""
             },
             "require": {
@@ -1542,7 +1577,7 @@
                 "asynchronous",
                 "event-loop"
             ],
-            "time": "2018-04-24T11:23:06+00:00"
+            "time": "2018-07-09T13:51:04+00:00"
         },
         {
             "name": "react/http-client",
