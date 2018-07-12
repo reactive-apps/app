@@ -950,19 +950,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/dummy.git",
-                "reference": "3b42d8067ce37c50785b0297acede7b46706b3c7"
+                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/3b42d8067ce37c50785b0297acede7b46706b3c7",
-                "reference": "3b42d8067ce37c50785b0297acede7b46706b3c7",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/e5e85f2796b6aebd94ae350b315220d7141ae3a7",
+                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^4.3"
+                "api-clients/test-utilities": "^5.0"
             },
             "type": "library",
             "extra": {
@@ -978,7 +978,17 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-06-25T15:46:50+00:00"
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Dummy definition for testing",
+            "time": "2018-07-10T06:18:55+00:00"
         },
         {
             "name": "php-di-definitions/react-event-loop",
@@ -986,12 +996,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/reactphp-event-loop.git",
-                "reference": "090964077585b49a0eb897683c3c506daf276ac6"
+                "reference": "bd5d88a6923641f00a1015cbb7eba8f9fbf62c17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-event-loop/zipball/090964077585b49a0eb897683c3c506daf276ac6",
-                "reference": "090964077585b49a0eb897683c3c506daf276ac6",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-event-loop/zipball/bd5d88a6923641f00a1015cbb7eba8f9fbf62c17",
+                "reference": "bd5d88a6923641f00a1015cbb7eba8f9fbf62c17",
                 "shasum": ""
             },
             "require": {
@@ -1010,7 +1020,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-05-12T16:19:40+00:00"
+            "time": "2018-07-09T21:35:50+00:00"
         },
         {
             "name": "php-di/invoker",
@@ -1540,16 +1550,16 @@
         },
         {
             "name": "react/event-loop",
-            "version": "v0.5.3",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/event-loop.git",
-                "reference": "228178a947de1f7cd9296d691878569628288c6f"
+                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/228178a947de1f7cd9296d691878569628288c6f",
-                "reference": "228178a947de1f7cd9296d691878569628288c6f",
+                "url": "https://api.github.com/repos/reactphp/event-loop/zipball/0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
+                "reference": "0266aff7aa7b0613b1f38a723e14a0ebc55cfca3",
                 "shasum": ""
             },
             "require": {
@@ -1577,7 +1587,7 @@
                 "asynchronous",
                 "event-loop"
             ],
-            "time": "2018-07-09T13:51:04+00:00"
+            "time": "2018-07-11T14:37:46+00:00"
         },
         {
             "name": "react/http-client",
@@ -1821,19 +1831,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/command.git",
-                "reference": "a2b39450bb4a6ff37d31699624009244ab0f5057"
+                "reference": "179e7ce94aaabc138a351091bf15d8ea7d65f127"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/command/zipball/a2b39450bb4a6ff37d31699624009244ab0f5057",
-                "reference": "a2b39450bb4a6ff37d31699624009244ab0f5057",
+                "url": "https://api.github.com/repos/reactive-apps/command/zipball/179e7ce94aaabc138a351091bf15d8ea7d65f127",
+                "reference": "179e7ce94aaabc138a351091bf15d8ea7d65f127",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^4.3"
+                "api-clients/test-utilities": "^5.0"
             },
             "type": "library",
             "autoload": {
@@ -1842,7 +1852,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-05-16T20:54:50+00:00"
+            "time": "2018-07-09T21:34:55+00:00"
         },
         {
             "name": "reactive-apps/rx-streams",
@@ -1850,12 +1860,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/rx-streams.git",
-                "reference": "c2e842e95b41561daf427cfafb38eff1baa74069"
+                "reference": "10a968255ffbcdaf1c0edf7d2f7accc7cc855972"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/c2e842e95b41561daf427cfafb38eff1baa74069",
-                "reference": "c2e842e95b41561daf427cfafb38eff1baa74069",
+                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/10a968255ffbcdaf1c0edf7d2f7accc7cc855972",
+                "reference": "10a968255ffbcdaf1c0edf7d2f7accc7cc855972",
                 "shasum": ""
             },
             "require": {
@@ -1863,7 +1873,7 @@
                 "reactivex/rxphp": "^2.0"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^4.3"
+                "api-clients/test-utilities": "^5.0"
             },
             "type": "library",
             "autoload": {
@@ -1872,7 +1882,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-05-20T10:55:26+00:00"
+            "time": "2018-07-09T21:34:00+00:00"
         },
         {
             "name": "reactivex/rxphp",
