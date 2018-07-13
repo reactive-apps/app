@@ -34,7 +34,7 @@
         "wyrihaximus/tactician-job-command-mapper": "^1.0"
     },
     "require-dev": {
-        "api-clients/test-utilities": "^4.3",
+        "api-clients/test-utilities": "^5.0",
         "monolog/monolog": "^1.23"
     },
     "extra": {
