@@ -10,7 +10,7 @@
         "league/tactician-container": "^2.0",
         "mnapoli/silly": "^1.7",
         "monolog/monolog": "^1.23",
-        "php-di-definitions/definitions-gatherer": "dev-master",
+        "php-di-definitions/definitions-gatherer": "^1.0",
         "php-di-definitions/react-event-loop": "dev-master",
         "php-di/php-di": "^6.0",
         "react/event-loop": "^1.0 || ^0.5",

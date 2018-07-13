@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cca5e710dc82746abe00e0877830d07c",
+    "content-hash": "67ad0d539819b561b21ba63ddb848b63",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -905,26 +905,25 @@
         },
         {
             "name": "php-di-definitions/definitions-gatherer",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/definitions-gatherer.git",
-                "reference": "221316c6e143696fbb17d7a3822c6dc9855eb6bd"
+                "reference": "f35d0051aa79ed630963e2172763bf46dbb39fb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/definitions-gatherer/zipball/221316c6e143696fbb17d7a3822c6dc9855eb6bd",
-                "reference": "221316c6e143696fbb17d7a3822c6dc9855eb6bd",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/definitions-gatherer/zipball/f35d0051aa79ed630963e2172763bf46dbb39fb4",
+                "reference": "f35d0051aa79ed630963e2172763bf46dbb39fb4",
                 "shasum": ""
             },
             "require": {
-                "igorw/get-in": "^1.0",
-                "joshdifabio/composed": "^1.0",
-                "php": "^7.1"
+                "php": "^7.2",
+                "php-di-definitions/dummy": "^1.0",
+                "wyrihaximus/get-in-packages-composer.jason": "^1.0"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^4.1",
-                "php-di-definitions/react-event-loop": "dev-master"
+                "api-clients/test-utilities": "^5.0"
             },
             "type": "library",
             "autoload": {
@@ -942,8 +941,54 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "description": "Async first Pusher client",
-            "time": "2018-05-14T13:03:17+00:00"
+            "description": "Collect definition files from composer.json's",
+            "time": "2018-07-12T15:30:41+00:00"
+        },
+        {
+            "name": "php-di-definitions/dummy",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-DI-Definitions/dummy.git",
+                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/e5e85f2796b6aebd94ae350b315220d7141ae3a7",
+                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "php-di-definitions": {
+                    "di": [
+                        "etc/di/dummy.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PHPDIDefinitions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Dummy definition for testing",
+            "time": "2018-07-10T06:18:55+00:00"
         },
         {
             "name": "php-di-definitions/react-event-loop",
@@ -6099,7 +6144,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "php-di-definitions/definitions-gatherer": 20,
         "php-di-definitions/react-event-loop": 20,
         "reactive-apps/command": 20,
         "reactive-apps/rx-streams": 20,
