@@ -1066,16 +1066,16 @@
         },
         {
             "name": "php-di/php-di",
-            "version": "6.0.3",
+            "version": "6.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/PHP-DI.git",
-                "reference": "61ef5c9fcbf04c8504a46d20bd27ea608eab7864"
+                "reference": "2c7a3a6b7b6c5dbe299a7a0cde386cea5d095eb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/61ef5c9fcbf04c8504a46d20bd27ea608eab7864",
-                "reference": "61ef5c9fcbf04c8504a46d20bd27ea608eab7864",
+                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/2c7a3a6b7b6c5dbe299a7a0cde386cea5d095eb3",
+                "reference": "2c7a3a6b7b6c5dbe299a7a0cde386cea5d095eb3",
                 "shasum": ""
             },
             "require": {
@@ -1125,7 +1125,7 @@
                 "ioc",
                 "psr11"
             ],
-            "time": "2018-08-25T22:21:38+00:00"
+            "time": "2018-08-31T21:13:20+00:00"
         },
         {
             "name": "php-di/phpdoc-reader",
@@ -1830,12 +1830,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/command.git",
-                "reference": "179e7ce94aaabc138a351091bf15d8ea7d65f127"
+                "reference": "dd38c8569247ad303618eee61392a1ab9fa171ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/command/zipball/179e7ce94aaabc138a351091bf15d8ea7d65f127",
-                "reference": "179e7ce94aaabc138a351091bf15d8ea7d65f127",
+                "url": "https://api.github.com/repos/reactive-apps/command/zipball/dd38c8569247ad303618eee61392a1ab9fa171ba",
+                "reference": "dd38c8569247ad303618eee61392a1ab9fa171ba",
                 "shasum": ""
             },
             "require": {
@@ -1851,7 +1851,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-07-09T21:34:55+00:00"
+            "time": "2018-09-03T07:41:16+00:00"
         },
         {
             "name": "reactive-apps/rx-streams",
@@ -1859,12 +1859,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/rx-streams.git",
-                "reference": "10a968255ffbcdaf1c0edf7d2f7accc7cc855972"
+                "reference": "9ef2dff37579aa8914dcf53828ae3d0282fa6e2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/10a968255ffbcdaf1c0edf7d2f7accc7cc855972",
-                "reference": "10a968255ffbcdaf1c0edf7d2f7accc7cc855972",
+                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/9ef2dff37579aa8914dcf53828ae3d0282fa6e2c",
+                "reference": "9ef2dff37579aa8914dcf53828ae3d0282fa6e2c",
                 "shasum": ""
             },
             "require": {
@@ -1881,7 +1881,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-07-09T21:34:00+00:00"
+            "time": "2018-09-03T07:41:06+00:00"
         },
         {
             "name": "reactivex/rxphp",
