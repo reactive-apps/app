@@ -1066,16 +1066,16 @@
         },
         {
             "name": "php-di/php-di",
-            "version": "6.0.4",
+            "version": "6.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/PHP-DI.git",
-                "reference": "2c7a3a6b7b6c5dbe299a7a0cde386cea5d095eb3"
+                "reference": "5e8b809960d5c3bfa096a90da9a78650e80b1f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/2c7a3a6b7b6c5dbe299a7a0cde386cea5d095eb3",
-                "reference": "2c7a3a6b7b6c5dbe299a7a0cde386cea5d095eb3",
+                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/5e8b809960d5c3bfa096a90da9a78650e80b1f0e",
+                "reference": "5e8b809960d5c3bfa096a90da9a78650e80b1f0e",
                 "shasum": ""
             },
             "require": {
@@ -1125,7 +1125,7 @@
                 "ioc",
                 "psr11"
             ],
-            "time": "2018-08-31T21:13:20+00:00"
+            "time": "2018-09-17T15:34:44+00:00"
         },
         {
             "name": "php-di/phpdoc-reader",
@@ -4108,7 +4108,7 @@
                     "homepage": "http://blog.astrumfutura.com"
                 },
                 {
-                    "name": "Théo FIDRY",
+                    "name": "Théo Fidry",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
