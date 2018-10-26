@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "5cce37758162a95f8b03156faacba8f0",
@@ -995,12 +995,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/reactphp-event-loop.git",
-                "reference": "bd5d88a6923641f00a1015cbb7eba8f9fbf62c17"
+                "reference": "06a096f3f3a33c84a15dd4d77aec4f62ac5c32b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-event-loop/zipball/bd5d88a6923641f00a1015cbb7eba8f9fbf62c17",
-                "reference": "bd5d88a6923641f00a1015cbb7eba8f9fbf62c17",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-event-loop/zipball/06a096f3f3a33c84a15dd4d77aec4f62ac5c32b2",
+                "reference": "06a096f3f3a33c84a15dd4d77aec4f62ac5c32b2",
                 "shasum": ""
             },
             "require": {
@@ -1019,7 +1019,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-07-09T21:35:50+00:00"
+            "time": "2018-07-23T16:07:03+00:00"
         },
         {
             "name": "php-di/invoker",
@@ -1066,16 +1066,16 @@
         },
         {
             "name": "php-di/php-di",
-            "version": "6.0.2",
+            "version": "6.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/PHP-DI.git",
-                "reference": "71a7f2ed1e728138060ea159cbb1a92dc8620bd2"
+                "reference": "5e8b809960d5c3bfa096a90da9a78650e80b1f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/71a7f2ed1e728138060ea159cbb1a92dc8620bd2",
-                "reference": "71a7f2ed1e728138060ea159cbb1a92dc8620bd2",
+                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/5e8b809960d5c3bfa096a90da9a78650e80b1f0e",
+                "reference": "5e8b809960d5c3bfa096a90da9a78650e80b1f0e",
                 "shasum": ""
             },
             "require": {
@@ -1125,7 +1125,7 @@
                 "ioc",
                 "psr11"
             ],
-            "time": "2018-04-23T06:54:40+00:00"
+            "time": "2018-09-17T15:34:44+00:00"
         },
         {
             "name": "php-di/phpdoc-reader",
@@ -1830,12 +1830,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/command.git",
-                "reference": "179e7ce94aaabc138a351091bf15d8ea7d65f127"
+                "reference": "dd38c8569247ad303618eee61392a1ab9fa171ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/command/zipball/179e7ce94aaabc138a351091bf15d8ea7d65f127",
-                "reference": "179e7ce94aaabc138a351091bf15d8ea7d65f127",
+                "url": "https://api.github.com/repos/reactive-apps/command/zipball/dd38c8569247ad303618eee61392a1ab9fa171ba",
+                "reference": "dd38c8569247ad303618eee61392a1ab9fa171ba",
                 "shasum": ""
             },
             "require": {
@@ -1851,7 +1851,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-07-09T21:34:55+00:00"
+            "time": "2018-09-03T07:41:16+00:00"
         },
         {
             "name": "reactive-apps/rx-streams",
@@ -1859,12 +1859,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/rx-streams.git",
-                "reference": "10a968255ffbcdaf1c0edf7d2f7accc7cc855972"
+                "reference": "9ef2dff37579aa8914dcf53828ae3d0282fa6e2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/10a968255ffbcdaf1c0edf7d2f7accc7cc855972",
-                "reference": "10a968255ffbcdaf1c0edf7d2f7accc7cc855972",
+                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/9ef2dff37579aa8914dcf53828ae3d0282fa6e2c",
+                "reference": "9ef2dff37579aa8914dcf53828ae3d0282fa6e2c",
                 "shasum": ""
             },
             "require": {
@@ -1881,7 +1881,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-07-09T21:34:00+00:00"
+            "time": "2018-09-03T07:41:06+00:00"
         },
         {
             "name": "reactivex/rxphp",
@@ -2473,16 +2473,16 @@
         },
         {
             "name": "symfony/polyfill-php56",
-            "version": "v1.8.0",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php56.git",
-                "reference": "af98553c84912459db3f636329567809d639a8f6"
+                "reference": "7b4fc009172cc0196535b0328bd1226284a28000"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/af98553c84912459db3f636329567809d639a8f6",
-                "reference": "af98553c84912459db3f636329567809d639a8f6",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/7b4fc009172cc0196535b0328bd1226284a28000",
+                "reference": "7b4fc009172cc0196535b0328bd1226284a28000",
                 "shasum": ""
             },
             "require": {
@@ -2492,7 +2492,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -2525,20 +2525,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-04-26T10:06:28+00:00"
+            "time": "2018-08-06T14:22:27+00:00"
         },
         {
             "name": "symfony/polyfill-util",
-            "version": "v1.8.0",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-util.git",
-                "reference": "1a5ad95d9436cbff3296034fe9f8d586dce3fb3a"
+                "reference": "8e15d04ba3440984d23e7964b2ee1d25c8de1581"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/1a5ad95d9436cbff3296034fe9f8d586dce3fb3a",
-                "reference": "1a5ad95d9436cbff3296034fe9f8d586dce3fb3a",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/8e15d04ba3440984d23e7964b2ee1d25c8de1581",
+                "reference": "8e15d04ba3440984d23e7964b2ee1d25c8de1581",
                 "shasum": ""
             },
             "require": {
@@ -2547,7 +2547,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -2577,7 +2577,7 @@
                 "polyfill",
                 "shim"
             ],
-            "time": "2018-04-26T10:06:28+00:00"
+            "time": "2018-08-06T14:22:27+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -3145,34 +3145,31 @@
         },
         {
             "name": "wyrihaximus/tactician-job-command-mapper",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-tactician-job-command-mapper.git",
-                "reference": "a9a7fed04c9d643e4f9451e33ae17629f41e5112"
+                "reference": "047d0376dd7ac78c23a8bab00b156c0092fe2dbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-tactician-job-command-mapper/zipball/a9a7fed04c9d643e4f9451e33ae17629f41e5112",
-                "reference": "a9a7fed04c9d643e4f9451e33ae17629f41e5112",
+                "url": "https://api.github.com/repos/WyriHaximus/php-tactician-job-command-mapper/zipball/047d0376dd7ac78c23a8bab00b156c0092fe2dbb",
+                "reference": "047d0376dd7ac78c23a8bab00b156c0092fe2dbb",
                 "shasum": ""
             },
             "require": {
-                "doctrine/annotations": "^1.2",
-                "php": "^7.0"
+                "doctrine/annotations": "^1.6",
+                "php": "^7.2",
+                "wyrihaximus/doctrine-annotation-autoloader": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.0",
-                "squizlabs/php_codesniffer": "^2.6"
+                "api-clients/test-utilities": "^5.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "WyriHaximus\\Tactician\\JobCommand\\": "src/"
-                },
-                "files": [
-                    "src/bootstrap.php"
-                ]
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -3185,7 +3182,7 @@
                 }
             ],
             "description": "Job to Command mapper for Tactician",
-            "time": "2017-04-16T12:35:26+00:00"
+            "time": "2018-08-25T11:17:23+00:00"
         }
     ],
     "packages-dev": [
