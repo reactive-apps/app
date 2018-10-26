@@ -29,10 +29,10 @@ class Index implements Command
     private $shutdown;
 
     /**
-     * @param Shutdown $shutdown
+     * @param Shutdown        $shutdown
      * @param OutputInterface $output
-     * @param Application $app
-     * @param LoopInterface $loop
+     * @param Application     $app
+     * @param LoopInterface   $loop
      */
     public function __construct(Shutdown $shutdown, OutputInterface $output, Application $app, LoopInterface $loop)
     {

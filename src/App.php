@@ -49,9 +49,9 @@ final class App
     private $booted = false;
 
     /**
-     * @param LoopInterface $loop
-     * @param Shutdown $shutdown
-     * @param Application $application
+     * @param LoopInterface   $loop
+     * @param Shutdown        $shutdown
+     * @param Application     $application
      * @param OutputInterface $output
      * @param LoggerInterface $logger
      */
@@ -72,6 +72,7 @@ final class App
     {
         if ($this->booted === true) {
             $this->logger->emergency('Can\'t be booted twice');
+
             return;
         }
         $this->booted = true;

@@ -1,7 +1,5 @@
 <?php declare(strict_types=1);
 
-use Monolog\ErrorHandler;
-use Psr\Log\LoggerInterface;
 use ReactiveApps\CommandCreator;
 use ReactiveApps\CommandLocator;
 use Silly\Application;
@@ -14,6 +12,7 @@ return (function () {
                 $app->command(...$commandFactory->create($class));
             }
             $app->setAutoExit(false);
+
             return $app;
         })
         ->parameter('name', \DI\get('config.app.name'))

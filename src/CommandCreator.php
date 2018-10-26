@@ -3,10 +3,9 @@
 namespace ReactiveApps;
 
 use Psr\Container\ContainerInterface;
+use React\EventLoop\LoopInterface;
 use Recoil\Kernel;
 use Recoil\React\ReactKernel;
-use React\EventLoop\LoopInterface;
-use ReactiveApps\Command\Command;
 use ReflectionClass;
 use Roave\BetterReflection\BetterReflection;
 
