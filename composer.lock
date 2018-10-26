@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "82986beb44f67433d754eef278edcb29",
+    "content-hash": "fd0100636498bc0b9442156669ab0532",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -2708,46 +2708,6 @@
             "time": "2018-06-19T20:43:13+00:00"
         },
         {
-            "name": "wyrihaximus/list-classes-in-directory",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WyriHaximus/php-list-classes-in-directory.git",
-                "reference": "148fa9f5c76bf4aee6db285b41da83fb736eaee0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-list-classes-in-directory/zipball/148fa9f5c76bf4aee6db285b41da83fb736eaee0",
-                "reference": "148fa9f5c76bf4aee6db285b41da83fb736eaee0",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2",
-                "roave/better-reflection": "^3.1 || ^2.0"
-            },
-            "require-dev": {
-                "api-clients/test-utilities": "^5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cees-Jan Kiewiet",
-                    "email": "ceesjank@gmail.com"
-                }
-            ],
-            "description": "List all classes in the given directory",
-            "time": "2018-10-20T16:41:02+00:00"
-        },
-        {
             "name": "wyrihaximus/monolog-formatted-psr-handler",
             "version": "1.0.0",
             "source": {
@@ -3137,51 +3097,6 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "time": "2018-05-18T06:02:25+00:00"
-        },
-        {
-            "name": "wyrihaximus/tactician-command-handler-mapper",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WyriHaximus/php-tactician-command-handler-mapper.git",
-                "reference": "0672ddb611cbb6a6d753aa6389b3b7781b01fd81"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-tactician-command-handler-mapper/zipball/0672ddb611cbb6a6d753aa6389b3b7781b01fd81",
-                "reference": "0672ddb611cbb6a6d753aa6389b3b7781b01fd81",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/annotations": "^1.2",
-                "php": "^7.2",
-                "wyrihaximus/doctrine-annotation-autoloader": "^1.0",
-                "wyrihaximus/list-classes-in-directory": "^1.0"
-            },
-            "require-dev": {
-                "api-clients/test-utilities": "^5.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "WyriHaximus\\Tactician\\CommandHandler\\": "src/"
-                },
-                "files": [
-                    "src/bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cees-Jan Kiewiet",
-                    "email": "ceesjank@gmail.com"
-                }
-            ],
-            "description": "Command to Handler mapper for Tactician",
-            "time": "2018-10-14T08:16:12+00:00"
         },
         {
             "name": "wyrihaximus/tactician-job-command-mapper",
