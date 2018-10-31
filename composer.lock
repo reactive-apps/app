@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2afb59c834024d339a9aeb4a1345f49",
+    "content-hash": "f848fd80ca4b905f4d39d630883fba30",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -3107,16 +3107,16 @@
         },
         {
             "name": "wyrihaximus/react-stdio-symfony-console",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/reactphp-stdio-symfony-console.git",
-                "reference": "493d6aaa022d2cf7d5e36cd3260feee7eb10a79a"
+                "reference": "27bc548b49edfa690ec25a55caf9b7ecaf864c55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-stdio-symfony-console/zipball/493d6aaa022d2cf7d5e36cd3260feee7eb10a79a",
-                "reference": "493d6aaa022d2cf7d5e36cd3260feee7eb10a79a",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-stdio-symfony-console/zipball/27bc548b49edfa690ec25a55caf9b7ecaf864c55",
+                "reference": "27bc548b49edfa690ec25a55caf9b7ecaf864c55",
                 "shasum": ""
             },
             "require": {
@@ -3125,7 +3125,7 @@
                 "symfony/console": "^4.0 || ^3.4"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^4.3"
+                "api-clients/test-utilities": "^5.1"
             },
             "type": "library",
             "autoload": {
@@ -3134,7 +3134,8 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-05-18T06:02:25+00:00"
+            "description": "Symfony Console wrapper around clue/stdio-react",
+            "time": "2018-10-31T21:36:05+00:00"
         },
         {
             "name": "wyrihaximus/tactician-job-command-mapper",
@@ -5969,8 +5970,7 @@
         "php-di-definitions/react-event-loop": 20,
         "php-di-definitions/react-recoil": 20,
         "reactive-apps/command": 20,
-        "reactive-apps/rx-streams": 20,
-        "wyrihaximus/react-stdio-symfony-console": 20
+        "reactive-apps/rx-streams": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

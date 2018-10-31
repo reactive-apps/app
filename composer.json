@@ -30,7 +30,7 @@
         "wyrihaximus/psr-3-filter": "^1.1",
         "wyrihaximus/react-psr-3-loggly": "^2.0",
         "wyrihaximus/react-psr-3-stdio": "^2.0",
-        "wyrihaximus/react-stdio-symfony-console": "dev-master",
+        "wyrihaximus/react-stdio-symfony-console": "^1.0",
         "wyrihaximus/tactician-job-command-mapper": "^1.0"
     },
     "require-dev": {
