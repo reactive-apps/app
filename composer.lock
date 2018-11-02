@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e1daeda1f7f8c24f3eb414582238e49",
+    "content-hash": "1a4e89aa9fb61d11566a131200797356",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -1023,16 +1023,16 @@
         },
         {
             "name": "php-di-definitions/react-recoil",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/reactphp-recoilphp.git",
-                "reference": "9ded6fd3bb2ba03d300608e8ac985b5fc5130980"
+                "reference": "2f49c2c56d1385a430561868131e32d129221f73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-recoilphp/zipball/9ded6fd3bb2ba03d300608e8ac985b5fc5130980",
-                "reference": "9ded6fd3bb2ba03d300608e8ac985b5fc5130980",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-recoilphp/zipball/2f49c2c56d1385a430561868131e32d129221f73",
+                "reference": "2f49c2c56d1385a430561868131e32d129221f73",
                 "shasum": ""
             },
             "require": {
@@ -1043,6 +1043,9 @@
                 "recoil/recoil": "^1.0",
                 "wyrihaximus/psr-3-callable-throwable-logger": "^1.0",
                 "wyrihaximus/psr-3-context-logger": "^1.0"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^5.1"
             },
             "type": "library",
             "extra": {
@@ -1057,7 +1060,7 @@
                 "MIT"
             ],
             "description": "PHP-DI definition for using RecoilPHP with ReactPHP",
-            "time": "2018-10-27T22:18:28+00:00"
+            "time": "2018-11-02T06:45:45+00:00"
         },
         {
             "name": "php-di/invoker",
@@ -5968,7 +5971,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "php-di-definitions/react-event-loop": 20,
-        "php-di-definitions/react-recoil": 20,
         "reactive-apps/command": 20,
         "reactive-apps/rx-streams": 20
     },
