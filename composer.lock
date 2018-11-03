@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7daa4cc16039512063a73e34ed5edf2e",
+    "content-hash": "9b46438bc817e69f3a10a1dd05954b01",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -991,35 +991,39 @@
         },
         {
             "name": "php-di-definitions/react-event-loop",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/reactphp-event-loop.git",
-                "reference": "06a096f3f3a33c84a15dd4d77aec4f62ac5c32b2"
+                "reference": "81d59eabb5df970added99e7f163aaf267f487d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-event-loop/zipball/06a096f3f3a33c84a15dd4d77aec4f62ac5c32b2",
-                "reference": "06a096f3f3a33c84a15dd4d77aec4f62ac5c32b2",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-event-loop/zipball/81d59eabb5df970added99e7f163aaf267f487d3",
+                "reference": "81d59eabb5df970added99e7f163aaf267f487d3",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1",
+                "php": "^7.2",
                 "react/event-loop": "^1.0 || ^0.5"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^4.3"
+                "api-clients/test-utilities": "^5.1"
             },
             "type": "library",
             "extra": {
                 "php-di-definitions": {
                     "di": [
-                        "src/event-loop.php"
+                        "etc/di/event-loop.php"
                     ]
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-07-23T16:07:03+00:00"
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP-DI definition for the ReactPHP event loop",
+            "time": "2018-11-03T22:29:00+00:00"
         },
         {
             "name": "php-di-definitions/react-recoil",
@@ -5970,7 +5974,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "php-di-definitions/react-event-loop": 20,
         "reactive-apps/command": 20,
         "reactive-apps/rx-streams": 20
     },
