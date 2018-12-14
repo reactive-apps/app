@@ -21,7 +21,14 @@ use function DI\get;
 
 return (function () {
     return [
-        LoggerInterface::class => factory(function (LoopInterface $loop, Shutdown $shutdown, string $name, string $version) {
+        LoggerInterface::class => factory(function (
+            LoopInterface $loop,
+            Shutdown $shutdown,
+            string $name,
+            string $version,
+            array $handlers = [],
+            array $processors = []
+        ) {
             $logger = new Logger(strtolower($name));
             $logger->pushProcessor(new ToContextProcessor());
             $logger->pushProcessor(new TraceProcessor());
@@ -32,6 +39,9 @@ return (function () {
             $logger->pushProcessor(new Processor\IntrospectionProcessor(Logger::NOTICE));
             $logger->pushProcessor(new Processor\MemoryUsageProcessor());
             $logger->pushProcessor(new Processor\MemoryPeakUsageProcessor());
+            foreach ($processors as $processor) {
+                $logger->pushProcessor($processor);
+            }
             //$logger->pushHandler(new PsrHandler(LogglyLogger::create($loop, require SECRETS . 'loggly.php'), Logger::INFO));
             $consoleHandler = new FormattedPsrHandler(StdioLogger::create($loop)->withHideLevel(true));
             $consoleHandler->setFormatter(new ColoredLineFormatter(
@@ -42,6 +52,9 @@ return (function () {
                 false
             ));
             $logger->pushHandler($consoleHandler);
+            foreach ($handlers as $handler) {
+                $logger->pushProcessor($handler);
+            }
 
             $shutdown->subscribe(null, null, function () use ($logger) {
                 $logger->setHandlers([
@@ -57,6 +70,10 @@ return (function () {
             });
 
             return $logger;
-        })->parameter('name', get('config.app.name'))->parameter('version', get('config.app.version')),
+        })->
+            parameter('name', get('config.app.name'))->
+            parameter('version', get('config.app.version'))->
+            parameter('handlers', get('config.app.logger.handlers'))->
+            parameter('processors', get('config.app.logger.processors')),
     ];
 })();
