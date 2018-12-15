@@ -53,7 +53,7 @@ return (function () {
             ));
             $logger->pushHandler($consoleHandler);
             foreach ($handlers as $handler) {
-                $logger->pushProcessor($handler);
+                $logger->pushHandler($handler);
             }
 
             $shutdown->subscribe(null, null, function () use ($logger) {
