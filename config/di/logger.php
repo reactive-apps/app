@@ -26,8 +26,8 @@ return (function () {
             Shutdown $shutdown,
             string $name,
             string $version,
-            array $handlers = [],
-            array $processors = []
+            iterable $handlers = [],
+            iterable $processors = []
         ) {
             $logger = new Logger(strtolower($name));
             $logger->pushProcessor(new ToContextProcessor());
