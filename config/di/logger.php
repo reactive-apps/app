@@ -73,7 +73,7 @@ return (function () {
         })->
             parameter('name', get('config.app.name'))->
             parameter('version', get('config.app.version'))->
-            parameter('handlers', get('config.app.logger.handlers'))->
-            parameter('processors', get('config.app.logger.processors')),
+            parameter('handlers', get('config.logger.handlers'))->
+            parameter('processors', get('config.logger.processors')),
     ];
 })();
