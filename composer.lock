@@ -90,16 +90,16 @@
         },
         {
             "name": "clue/stdio-react",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/clue/php-stdio-react.git",
-                "reference": "61d1ccdc3efa9521f5215665b69cd6b592880071"
+                "url": "https://github.com/clue/reactphp-stdio.git",
+                "reference": "43d24e4617b2d001554ebbe78e3ae968e9114b21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/php-stdio-react/zipball/61d1ccdc3efa9521f5215665b69cd6b592880071",
-                "reference": "61d1ccdc3efa9521f5215665b69cd6b592880071",
+                "url": "https://api.github.com/repos/clue/reactphp-stdio/zipball/43d24e4617b2d001554ebbe78e3ae968e9114b21",
+                "reference": "43d24e4617b2d001554ebbe78e3ae968e9114b21",
                 "shasum": ""
             },
             "require": {
@@ -134,7 +134,7 @@
                 }
             ],
             "description": "Async, event-driven console input & output (STDIN, STDOUT) for truly interactive CLI applications, built on top of ReactPHP",
-            "homepage": "https://github.com/clue/php-stdio-react",
+            "homepage": "https://github.com/clue/reactphp-stdio",
             "keywords": [
                 "async",
                 "autocomplete",
@@ -148,7 +148,7 @@
                 "stdio",
                 "stdout"
             ],
-            "time": "2018-02-06T09:34:26+00:00"
+            "time": "2018-09-03T11:39:08+00:00"
         },
         {
             "name": "clue/term-react",
@@ -1875,12 +1875,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/command.git",
-                "reference": "dd38c8569247ad303618eee61392a1ab9fa171ba"
+                "reference": "1185932a5678f5ffe1b93cd23e3547c68636bdcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/command/zipball/dd38c8569247ad303618eee61392a1ab9fa171ba",
-                "reference": "dd38c8569247ad303618eee61392a1ab9fa171ba",
+                "url": "https://api.github.com/repos/reactive-apps/command/zipball/1185932a5678f5ffe1b93cd23e3547c68636bdcb",
+                "reference": "1185932a5678f5ffe1b93cd23e3547c68636bdcb",
                 "shasum": ""
             },
             "require": {
@@ -1896,7 +1896,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-09-03T07:41:16+00:00"
+            "time": "2018-11-23T06:46:24+00:00"
         },
         {
             "name": "reactive-apps/rx-streams",
@@ -1904,12 +1904,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/rx-streams.git",
-                "reference": "9ef2dff37579aa8914dcf53828ae3d0282fa6e2c"
+                "reference": "58be5f2033909c956cc2dab54c6b4b6538e39f03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/9ef2dff37579aa8914dcf53828ae3d0282fa6e2c",
-                "reference": "9ef2dff37579aa8914dcf53828ae3d0282fa6e2c",
+                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/58be5f2033909c956cc2dab54c6b4b6538e39f03",
+                "reference": "58be5f2033909c956cc2dab54c6b4b6538e39f03",
                 "shasum": ""
             },
             "require": {
@@ -1926,7 +1926,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-09-03T07:41:06+00:00"
+            "time": "2018-11-23T06:53:50+00:00"
         },
         {
             "name": "reactivex/rxphp",
@@ -2391,20 +2391,21 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.1.1",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "70591cda56b4b47c55776ac78e157c4bb6c8b43f"
+                "reference": "4dff24e5d01e713818805c1862d2e3f901ee7dd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/70591cda56b4b47c55776ac78e157c4bb6c8b43f",
-                "reference": "70591cda56b4b47c55776ac78e157c4bb6c8b43f",
+                "url": "https://api.github.com/repos/symfony/console/zipball/4dff24e5d01e713818805c1862d2e3f901ee7dd0",
+                "reference": "4dff24e5d01e713818805c1862d2e3f901ee7dd0",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
+                "symfony/contracts": "^1.0",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
@@ -2428,7 +2429,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -2455,20 +2456,88 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-31T10:17:53+00:00"
+            "time": "2018-11-27T07:40:44+00:00"
         },
         {
-            "name": "symfony/polyfill-mbstring",
-            "version": "v1.8.0",
+            "name": "symfony/contracts",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "3296adf6a6454a050679cde90f95350ad604b171"
+                "url": "https://github.com/symfony/contracts.git",
+                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/3296adf6a6454a050679cde90f95350ad604b171",
-                "reference": "3296adf6a6454a050679cde90f95350ad604b171",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "psr/cache": "^1.0",
+                "psr/container": "^1.0"
+            },
+            "suggest": {
+                "psr/cache": "When using the Cache contracts",
+                "psr/container": "When using the Service contracts",
+                "symfony/cache-contracts-implementation": "",
+                "symfony/service-contracts-implementation": "",
+                "symfony/translation-contracts-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\": ""
+                },
+                "exclude-from-classmap": [
+                    "**/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A set of abstractions extracted out of the Symfony components",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "time": "2018-12-05T08:06:11+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/c79c051f5b3a46be09205c73b80b346e4153e494",
+                "reference": "c79c051f5b3a46be09205c73b80b346e4153e494",
                 "shasum": ""
             },
             "require": {
@@ -2480,7 +2549,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -2514,7 +2583,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-04-26T10:06:28+00:00"
+            "time": "2018-09-21T13:07:52+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
@@ -3114,16 +3183,16 @@
         },
         {
             "name": "wyrihaximus/react-stdio-symfony-console",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/reactphp-stdio-symfony-console.git",
-                "reference": "27bc548b49edfa690ec25a55caf9b7ecaf864c55"
+                "reference": "81d9801674e8a9806df8e3cb0be7a73b7a218aa1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/reactphp-stdio-symfony-console/zipball/27bc548b49edfa690ec25a55caf9b7ecaf864c55",
-                "reference": "27bc548b49edfa690ec25a55caf9b7ecaf864c55",
+                "url": "https://api.github.com/repos/WyriHaximus/reactphp-stdio-symfony-console/zipball/81d9801674e8a9806df8e3cb0be7a73b7a218aa1",
+                "reference": "81d9801674e8a9806df8e3cb0be7a73b7a218aa1",
                 "shasum": ""
             },
             "require": {
@@ -3142,7 +3211,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Symfony Console wrapper around clue/stdio-react",
-            "time": "2018-10-31T21:36:05+00:00"
+            "time": "2018-12-25T19:32:14+00:00"
         },
         {
             "name": "wyrihaximus/tactician-job-command-mapper",
