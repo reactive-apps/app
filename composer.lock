@@ -1462,16 +1462,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
                 "shasum": ""
             },
             "require": {
@@ -1505,7 +1505,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2018-11-20T15:27:04+00:00"
         },
         {
             "name": "react/cache",
@@ -2754,25 +2754,26 @@
         },
         {
             "name": "wyrihaximus/monolog-formatted-psr-handler",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-monolog-formatted-psr-handler.git",
-                "reference": "1260d914a5cba4a55f1ce2d6e9f4806f8bae6feb"
+                "reference": "af1ef4fe6ebe72e405bce86b686e2635e2f3ad80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-monolog-formatted-psr-handler/zipball/1260d914a5cba4a55f1ce2d6e9f4806f8bae6feb",
-                "reference": "1260d914a5cba4a55f1ce2d6e9f4806f8bae6feb",
+                "url": "https://api.github.com/repos/WyriHaximus/php-monolog-formatted-psr-handler/zipball/af1ef4fe6ebe72e405bce86b686e2635e2f3ad80",
+                "reference": "af1ef4fe6ebe72e405bce86b686e2635e2f3ad80",
                 "shasum": ""
             },
             "require": {
                 "monolog/monolog": "^1.23",
-                "php": "^7.0",
+                "php": "^7.2",
                 "psr/log": "^1.0"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^4.1"
+                "api-clients/cs-fixer-config": "^1.1",
+                "api-clients/test-utilities": "^5.2"
             },
             "type": "library",
             "autoload": {
@@ -2791,7 +2792,7 @@
                 }
             ],
             "description": "Passes `formatted` instead of `message` to the PSR-3 logger",
-            "time": "2017-06-26T19:23:22+00:00"
+            "time": "2018-12-25T11:42:22+00:00"
         },
         {
             "name": "wyrihaximus/monolog-processors",
