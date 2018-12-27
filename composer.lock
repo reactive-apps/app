@@ -730,16 +730,16 @@
         },
         {
             "name": "mnapoli/silly",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mnapoli/silly.git",
-                "reference": "bd6d1ec6d1644a5dfd5325492f2f8d36037da32c"
+                "reference": "5f7f34f4db75685e6fe7d652c12d9a7b6e8034d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mnapoli/silly/zipball/bd6d1ec6d1644a5dfd5325492f2f8d36037da32c",
-                "reference": "bd6d1ec6d1644a5dfd5325492f2f8d36037da32c",
+                "url": "https://api.github.com/repos/mnapoli/silly/zipball/5f7f34f4db75685e6fe7d652c12d9a7b6e8034d6",
+                "reference": "5f7f34f4db75685e6fe7d652c12d9a7b6e8034d6",
                 "shasum": ""
             },
             "require": {
@@ -749,6 +749,7 @@
                 "symfony/console": "~3.0|~4.0"
             },
             "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.12",
                 "mnapoli/phpunit-easymock": "~1.0",
                 "phpunit/phpunit": "~6.4"
             },
@@ -771,7 +772,7 @@
                 "micro-framework",
                 "silly"
             ],
-            "time": "2017-11-18T14:01:30+00:00"
+            "time": "2018-12-26T21:17:30+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1875,12 +1876,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/command.git",
-                "reference": "1185932a5678f5ffe1b93cd23e3547c68636bdcb"
+                "reference": "2bbff155092742394320e7a5717409912a0cedde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/command/zipball/1185932a5678f5ffe1b93cd23e3547c68636bdcb",
-                "reference": "1185932a5678f5ffe1b93cd23e3547c68636bdcb",
+                "url": "https://api.github.com/repos/reactive-apps/command/zipball/2bbff155092742394320e7a5717409912a0cedde",
+                "reference": "2bbff155092742394320e7a5717409912a0cedde",
                 "shasum": ""
             },
             "require": {
@@ -1896,7 +1897,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-11-23T06:46:24+00:00"
+            "time": "2018-12-26T15:46:13+00:00"
         },
         {
             "name": "reactive-apps/rx-streams",
@@ -1904,12 +1905,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/rx-streams.git",
-                "reference": "58be5f2033909c956cc2dab54c6b4b6538e39f03"
+                "reference": "f08d79eb1d594754eae47ef70667c720a2946055"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/58be5f2033909c956cc2dab54c6b4b6538e39f03",
-                "reference": "58be5f2033909c956cc2dab54c6b4b6538e39f03",
+                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/f08d79eb1d594754eae47ef70667c720a2946055",
+                "reference": "f08d79eb1d594754eae47ef70667c720a2946055",
                 "shasum": ""
             },
             "require": {
@@ -1926,7 +1927,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-11-23T06:53:50+00:00"
+            "time": "2018-12-26T15:45:51+00:00"
         },
         {
             "name": "reactivex/rxphp",
