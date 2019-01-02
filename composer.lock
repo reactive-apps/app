@@ -1876,12 +1876,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/command.git",
-                "reference": "2bbff155092742394320e7a5717409912a0cedde"
+                "reference": "513fcb9aa6e985fdf831fd454bd36d38f124b744"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/command/zipball/2bbff155092742394320e7a5717409912a0cedde",
-                "reference": "2bbff155092742394320e7a5717409912a0cedde",
+                "url": "https://api.github.com/repos/reactive-apps/command/zipball/513fcb9aa6e985fdf831fd454bd36d38f124b744",
+                "reference": "513fcb9aa6e985fdf831fd454bd36d38f124b744",
                 "shasum": ""
             },
             "require": {
@@ -1897,7 +1897,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-12-26T15:46:13+00:00"
+            "time": "2019-01-01T09:43:37+00:00"
         },
         {
             "name": "reactive-apps/rx-streams",
@@ -1905,12 +1905,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/rx-streams.git",
-                "reference": "f08d79eb1d594754eae47ef70667c720a2946055"
+                "reference": "c6abcad22c8726a968d3ed4ee6fa145b153bbcd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/f08d79eb1d594754eae47ef70667c720a2946055",
-                "reference": "f08d79eb1d594754eae47ef70667c720a2946055",
+                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/c6abcad22c8726a968d3ed4ee6fa145b153bbcd0",
+                "reference": "c6abcad22c8726a968d3ed4ee6fa145b153bbcd0",
                 "shasum": ""
             },
             "require": {
@@ -1927,7 +1927,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-12-26T15:45:51+00:00"
+            "time": "2019-01-01T09:43:43+00:00"
         },
         {
             "name": "reactivex/rxphp",
@@ -2782,16 +2782,16 @@
         },
         {
             "name": "wyrihaximus/get-in-packages-composer.jason",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-get-in-packages-composer.json.git",
-                "reference": "5d42230dcacd8f30c2d5cb3dc9ed0fafb79aaaa8"
+                "reference": "8f65f3297fb9cf00803141e6e8b8c0926bf93998"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-get-in-packages-composer.json/zipball/5d42230dcacd8f30c2d5cb3dc9ed0fafb79aaaa8",
-                "reference": "5d42230dcacd8f30c2d5cb3dc9ed0fafb79aaaa8",
+                "url": "https://api.github.com/repos/WyriHaximus/php-get-in-packages-composer.json/zipball/8f65f3297fb9cf00803141e6e8b8c0926bf93998",
+                "reference": "8f65f3297fb9cf00803141e6e8b8c0926bf93998",
                 "shasum": ""
             },
             "require": {
@@ -2800,7 +2800,7 @@
                 "php": "^7.2"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^5.0"
+                "api-clients/test-utilities": "^5.4"
             },
             "type": "library",
             "autoload": {
@@ -2820,7 +2820,7 @@
                 }
             ],
             "description": "Functions around joshdifabio/composed and igorw/get-in to gather configuration from composer.json",
-            "time": "2018-06-19T20:43:13+00:00"
+            "time": "2019-01-01T21:52:30+00:00"
         },
         {
             "name": "wyrihaximus/monolog-formatted-psr-handler",
