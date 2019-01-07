@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b46438bc817e69f3a10a1dd05954b01",
+    "content-hash": "b00e55d89a2c3c82991857b0820a8c1b",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -2823,6 +2823,47 @@
             "time": "2019-01-01T21:52:30+00:00"
         },
         {
+            "name": "wyrihaximus/list-classes-in-directory",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/php-list-classes-in-directory.git",
+                "reference": "2fb7205e48170ba02e21698abb691eb6bf033a91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/php-list-classes-in-directory/zipball/2fb7205e48170ba02e21698abb691eb6bf033a91",
+                "reference": "2fb7205e48170ba02e21698abb691eb6bf033a91",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "roave/better-reflection": "^3.1 || ^2.0"
+            },
+            "require-dev": {
+                "api-clients/cs-fixer-config": "^1.1",
+                "api-clients/test-utilities": "^5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Allows you to list full qualified class names in directories and files.",
+            "time": "2018-12-24T16:15:03+00:00"
+        },
+        {
             "name": "wyrihaximus/monolog-formatted-psr-handler",
             "version": "1.1.0",
             "source": {
@@ -3217,25 +3258,26 @@
         },
         {
             "name": "wyrihaximus/tactician-job-command-mapper",
-            "version": "1.1.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-tactician-job-command-mapper.git",
-                "reference": "047d0376dd7ac78c23a8bab00b156c0092fe2dbb"
+                "reference": "db6f9d768bab5224e2632f9f4228afc5a46a6346"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-tactician-job-command-mapper/zipball/047d0376dd7ac78c23a8bab00b156c0092fe2dbb",
-                "reference": "047d0376dd7ac78c23a8bab00b156c0092fe2dbb",
+                "url": "https://api.github.com/repos/WyriHaximus/php-tactician-job-command-mapper/zipball/db6f9d768bab5224e2632f9f4228afc5a46a6346",
+                "reference": "db6f9d768bab5224e2632f9f4228afc5a46a6346",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "^1.6",
                 "php": "^7.2",
-                "wyrihaximus/doctrine-annotation-autoloader": "^1.0"
+                "wyrihaximus/doctrine-annotation-autoloader": "^1.0",
+                "wyrihaximus/list-classes-in-directory": "^1.3"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^5.0"
+                "api-clients/test-utilities": "^5.4"
             },
             "type": "library",
             "autoload": {
@@ -3254,7 +3296,7 @@
                 }
             ],
             "description": "Job to Command mapper for Tactician",
-            "time": "2018-08-25T11:17:23+00:00"
+            "time": "2019-01-05T13:46:35+00:00"
         }
     ],
     "packages-dev": [
