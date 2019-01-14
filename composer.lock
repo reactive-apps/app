@@ -905,16 +905,16 @@
         },
         {
             "name": "php-di-definitions/definitions-gatherer",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/definitions-gatherer.git",
-                "reference": "f35d0051aa79ed630963e2172763bf46dbb39fb4"
+                "reference": "5561e88fdd2df85ad7ca771e1e02c378fb8066d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/definitions-gatherer/zipball/f35d0051aa79ed630963e2172763bf46dbb39fb4",
-                "reference": "f35d0051aa79ed630963e2172763bf46dbb39fb4",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/definitions-gatherer/zipball/5561e88fdd2df85ad7ca771e1e02c378fb8066d5",
+                "reference": "5561e88fdd2df85ad7ca771e1e02c378fb8066d5",
                 "shasum": ""
             },
             "require": {
@@ -942,20 +942,20 @@
                 }
             ],
             "description": "Collect definition files from composer.json's",
-            "time": "2018-07-12T15:30:41+00:00"
+            "time": "2019-01-12T17:25:19+00:00"
         },
         {
             "name": "php-di-definitions/dummy",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/dummy.git",
-                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7"
+                "reference": "c42f65bef7872580805d8a2a5905376ebb78d651"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/e5e85f2796b6aebd94ae350b315220d7141ae3a7",
-                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/c42f65bef7872580805d8a2a5905376ebb78d651",
+                "reference": "c42f65bef7872580805d8a2a5905376ebb78d651",
                 "shasum": ""
             },
             "require": {
@@ -968,7 +968,7 @@
             "extra": {
                 "php-di-definitions": {
                     "di": [
-                        "etc/di/dummy.php"
+                        "etc/di/*.php"
                     ]
                 }
             },
@@ -988,7 +988,7 @@
                 }
             ],
             "description": "Dummy definition for testing",
-            "time": "2018-07-10T06:18:55+00:00"
+            "time": "2019-01-12T17:12:23+00:00"
         },
         {
             "name": "php-di-definitions/react-event-loop",
