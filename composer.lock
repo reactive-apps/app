@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b00e55d89a2c3c82991857b0820a8c1b",
+    "content-hash": "800fa90209d4d505a82c162a7439d6fc",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -3258,16 +3258,16 @@
         },
         {
             "name": "wyrihaximus/tactician-job-command-mapper",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-tactician-job-command-mapper.git",
-                "reference": "db6f9d768bab5224e2632f9f4228afc5a46a6346"
+                "reference": "20fff1fb31ec4085df2121dcf5ef19a810584239"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-tactician-job-command-mapper/zipball/db6f9d768bab5224e2632f9f4228afc5a46a6346",
-                "reference": "db6f9d768bab5224e2632f9f4228afc5a46a6346",
+                "url": "https://api.github.com/repos/WyriHaximus/php-tactician-job-command-mapper/zipball/20fff1fb31ec4085df2121dcf5ef19a810584239",
+                "reference": "20fff1fb31ec4085df2121dcf5ef19a810584239",
                 "shasum": ""
             },
             "require": {
@@ -3296,7 +3296,7 @@
                 }
             ],
             "description": "Job to Command mapper for Tactician",
-            "time": "2019-01-05T13:46:35+00:00"
+            "time": "2019-01-14T17:55:24+00:00"
         }
     ],
     "packages-dev": [
