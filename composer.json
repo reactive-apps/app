@@ -4,7 +4,7 @@
     "name": "reactive-apps/app",
     "require": {
         "php": "^7.2",
-        "bramus/monolog-colored-line-formatter": "^2.0",
+        "bramus/monolog-colored-line-formatter": "^3.0",
         "doctrine/annotations": "^1.4",
         "league/tactician": "^1.0",
         "league/tactician-container": "^2.0",
