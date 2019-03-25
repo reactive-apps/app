@@ -260,16 +260,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5"
+                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
-                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/53120e0eb10355388d6ccbe462f1fea34ddadb24",
+                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24",
                 "shasum": ""
             },
             "require": {
@@ -324,7 +324,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2017-12-06T07:11:42+00:00"
+            "time": "2019-03-25T19:12:02+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -1877,12 +1877,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/command.git",
-                "reference": "784be6b87a014a5180cd4164becb9100f67d4ea5"
+                "reference": "154946b83b2dd08244dbd3747418f66854884aa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/command/zipball/784be6b87a014a5180cd4164becb9100f67d4ea5",
-                "reference": "784be6b87a014a5180cd4164becb9100f67d4ea5",
+                "url": "https://api.github.com/repos/reactive-apps/command/zipball/154946b83b2dd08244dbd3747418f66854884aa7",
+                "reference": "154946b83b2dd08244dbd3747418f66854884aa7",
                 "shasum": ""
             },
             "require": {
@@ -1898,7 +1898,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2019-01-22T13:09:00+00:00"
+            "time": "2019-03-17T13:35:04+00:00"
         },
         {
             "name": "reactive-apps/rx-streams",
@@ -1906,12 +1906,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/rx-streams.git",
-                "reference": "1860a3af2130d2cc09f12a671a255da17a673a59"
+                "reference": "997e2b36bb8dfe62c742e6dd7919f379deda92fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/1860a3af2130d2cc09f12a671a255da17a673a59",
-                "reference": "1860a3af2130d2cc09f12a671a255da17a673a59",
+                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/997e2b36bb8dfe62c742e6dd7919f379deda92fb",
+                "reference": "997e2b36bb8dfe62c742e6dd7919f379deda92fb",
                 "shasum": ""
             },
             "require": {
@@ -1928,7 +1928,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2019-01-22T13:09:11+00:00"
+            "time": "2019-03-17T13:34:59+00:00"
         },
         {
             "name": "reactivex/rxphp",
@@ -4140,7 +4140,7 @@
                     "homepage": "http://blog.astrumfutura.com"
                 },
                 {
-                    "name": "Théo FIDRY",
+                    "name": "Théo Fidry",
                     "email": "theo.fidry@gmail.com"
                 }
             ],
