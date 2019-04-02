@@ -2,8 +2,10 @@
 
 namespace ReactiveApps;
 
+use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
+use ReactiveApps\Event\Boot;
 use ReactiveApps\Rx\Shutdown;
 use Silly\Application;
 use Symfony\Component\Console\Input\ArgvInput;
@@ -13,20 +15,15 @@ use WyriHaximus\PSR3\ContextLogger\ContextLogger;
 
 final class App
 {
-    private const SIGNALS = [
-        SIGTERM,
-        SIGINT,
-    ];
-
     /**
      * @var LoopInterface
      */
     private $loop;
 
     /**
-     * @var Shutdown
+     * @var EventDispatcherInterface
      */
-    private $shutdown;
+    private $eventDispatcher;
 
     /**
      * @var Application
@@ -50,22 +47,18 @@ final class App
 
     /**
      * @param LoopInterface   $loop
-     * @param Shutdown        $shutdown
+     * @param EventDispatcherInterface        $eventDispatcher
      * @param Application     $application
      * @param OutputInterface $output
      * @param LoggerInterface $logger
      */
-    public function __construct(LoopInterface $loop, Shutdown $shutdown, Application $application, OutputInterface $output, LoggerInterface $logger)
+    public function __construct(LoopInterface $loop, EventDispatcherInterface $eventDispatcher, Application $application, OutputInterface $output, LoggerInterface $logger)
     {
         $this->loop = $loop;
-        $this->shutdown = $shutdown;
+        $this->eventDispatcher = $eventDispatcher;
         $this->application = $application;
         $this->output = $output;
         $this->logger = new ContextLogger($logger, [], 'app');
-
-        $this->shutdown->subscribe(null, null, function () {
-            $this->logger->notice('Shutdown issued');
-        });
     }
 
     public function boot(array $argv)
@@ -78,7 +71,7 @@ final class App
         $this->booted = true;
         $this->logger->debug('Booting');
 
-        $this->setUpSignals();
+        $this->eventDispatcher->dispatch(new Boot());
 
         $exitCode = null;
         $this->loop->futureTick(function () use ($argv, &$exitCode) {
@@ -96,36 +89,5 @@ final class App
         $this->logger->debug('Execution completed with exit code: ' . $exitCode);
 
         return $exitCode;
-    }
-
-    private function setUpSignals()
-    {
-        $this->logger->debug('Setting up signals');
-
-        $handler = function ($signal) {
-            switch ($signal) {
-                case SIGTERM:
-                    $signalName = 'SIGTERM';
-                    break;
-                case SIGINT:
-                    $signalName = 'SIGINT';
-                    break;
-                default:
-                    $signalName = 'unknown signal';
-                    break;
-            }
-            $this->logger->debug('Caught signal: ' . $signalName);
-            $this->shutdown->onCompleted();
-        };
-
-        foreach (self::SIGNALS as $signal) {
-            $this->loop->addSignal($signal, $handler);
-        }
-
-        $this->shutdown->subscribe(null, null, function () use ($handler) {
-            foreach (self::SIGNALS as $signal) {
-                $this->loop->removeSignal($signal, $handler);
-            }
-        });
     }
 }

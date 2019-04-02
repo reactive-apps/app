@@ -21,6 +21,7 @@
         "recoil/react": "^1.0",
         "recoil/recoil": "^1.0",
         "roave/better-reflection": "^3.0 || ^2.0",
+        "wyrihaximus/broadcast": "dev-master",
         "wyrihaximus/doctrine-annotation-autoloader": "^1.0",
         "wyrihaximus/get-in-packages-composer.jason": "^1.0",
         "wyrihaximus/monolog-formatted-psr-handler": "^1.0",
@@ -39,9 +40,7 @@
     "extra": {
         "php-di-definitions": {
             "di": [
-                "config/di/app.php",
-                "config/di/logger.php",
-                "config/di/output.php"
+                "config/di/*.php"
             ]
         },
         "reactive-apps": {
