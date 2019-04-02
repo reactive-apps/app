@@ -6,7 +6,6 @@ use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
 use ReactiveApps\Event\Boot;
-use ReactiveApps\Rx\Shutdown;
 use Silly\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\OutputInterface;
