@@ -46,6 +46,11 @@
         "reactive-apps": {
             "command": {
                 "ReactiveApps\\Command": "src/Command"
+            },
+            "listeners": {
+                "ReactiveApps\\Event\\Boot": [
+                    "ReactiveApps\\Listener\\Signals"
+                ]
             }
         }
     },
