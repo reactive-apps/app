@@ -49,7 +49,7 @@
             },
             "listeners": {
                 "ReactiveApps\\Event\\Boot": [
-                    "ReactiveApps\\Listener\\Signals"
+                    "src/Listener/Signals.php"
                 ]
             }
         }
