@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c23fb03b7507d196f9d045b87ab11956",
+    "content-hash": "dec1b938392c0d5292f07ff7d1e1e58d",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -1945,36 +1945,6 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "time": "2019-03-17T13:35:04+00:00"
-        },
-        {
-            "name": "reactive-apps/rx-streams",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/reactive-apps/rx-streams.git",
-                "reference": "997e2b36bb8dfe62c742e6dd7919f379deda92fb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/rx-streams/zipball/997e2b36bb8dfe62c742e6dd7919f379deda92fb",
-                "reference": "997e2b36bb8dfe62c742e6dd7919f379deda92fb",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2",
-                "reactivex/rxphp": "^2.0"
-            },
-            "require-dev": {
-                "api-clients/test-utilities": "^5.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "ReactiveApps\\Rx\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2019-03-17T13:34:59+00:00"
         },
         {
             "name": "reactivex/rxphp",
@@ -8158,7 +8128,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "reactive-apps/command": 20,
-        "reactive-apps/rx-streams": 20,
         "wyrihaximus/broadcast": 20
     },
     "prefer-stable": true,

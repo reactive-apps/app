@@ -16,7 +16,6 @@
         "php-di/php-di": "^6.0",
         "react/event-loop": "^1.0 || ^0.5",
         "reactive-apps/command": "dev-master",
-        "reactive-apps/rx-streams": "dev-master",
         "reactivex/rxphp": "^2.0",
         "recoil/react": "^1.0",
         "recoil/recoil": "^1.0",
