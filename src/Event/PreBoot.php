@@ -2,6 +2,6 @@
 
 namespace ReactiveApps\Event;
 
-final class Boot
+final class PreBoot
 {
 }
