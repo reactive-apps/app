@@ -578,6 +578,45 @@
             "time": "2018-03-21T22:21:57+00:00"
         },
         {
+            "name": "jetbrains/phpstorm-stubs",
+            "version": "v2019.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JetBrains/phpstorm-stubs.git",
+                "reference": "9e309771f362e979ecfb429303ad7a402c657234"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JetBrains/phpstorm-stubs/zipball/9e309771f362e979ecfb429303ad7a402c657234",
+                "reference": "9e309771f362e979ecfb429303ad7a402c657234",
+                "shasum": ""
+            },
+            "require-dev": {
+                "nikic/php-parser": "v4.0.1",
+                "php": "^7.1",
+                "phpdocumentor/reflection-docblock": "^4.3",
+                "phpunit/phpunit": "7.1.4"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "PHP runtime & extensions header files for PhpStorm",
+            "homepage": "https://www.jetbrains.com/phpstorm",
+            "keywords": [
+                "autocomplete",
+                "code",
+                "inference",
+                "inspection",
+                "jetbrains",
+                "phpstorm",
+                "stubs",
+                "type"
+            ],
+            "time": "2019-03-25T16:59:23+00:00"
+        },
+        {
             "name": "joshdifabio/composed",
             "version": "v1.0.0",
             "source": {
@@ -2314,19 +2353,20 @@
         },
         {
             "name": "roave/better-reflection",
-            "version": "3.2.0",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/BetterReflection.git",
-                "reference": "f54261a37683f9ce18237d95a4ecc2172fc205f3"
+                "reference": "df78b556a7280c4145d4ed5edd2ca6a7e7e22716"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/BetterReflection/zipball/f54261a37683f9ce18237d95a4ecc2172fc205f3",
-                "reference": "f54261a37683f9ce18237d95a4ecc2172fc205f3",
+                "url": "https://api.github.com/repos/Roave/BetterReflection/zipball/df78b556a7280c4145d4ed5edd2ca6a7e7e22716",
+                "reference": "df78b556a7280c4145d4ed5edd2ca6a7e7e22716",
                 "shasum": ""
             },
             "require": {
+                "jetbrains/phpstorm-stubs": "2019.1",
                 "nikic/php-parser": "^4.0.4",
                 "php": ">=7.1.0,<7.4.0",
                 "phpdocumentor/reflection-docblock": "^4.1.1",
@@ -2378,7 +2418,7 @@
                 }
             ],
             "description": "Better Reflection - an improved code reflection API",
-            "time": "2018-12-07T15:09:42+00:00"
+            "time": "2019-04-20T07:54:38+00:00"
         },
         {
             "name": "roave/signature",
@@ -2835,12 +2875,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-broadcast.git",
-                "reference": "706395fd737880d62f827eaf354598e142a2b243"
+                "reference": "244a4ae734230a8b860c91bcdb7419b1b19b68ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-broadcast/zipball/706395fd737880d62f827eaf354598e142a2b243",
-                "reference": "706395fd737880d62f827eaf354598e142a2b243",
+                "url": "https://api.github.com/repos/WyriHaximus/php-broadcast/zipball/244a4ae734230a8b860c91bcdb7419b1b19b68ff",
+                "reference": "244a4ae734230a8b860c91bcdb7419b1b19b68ff",
                 "shasum": ""
             },
             "require": {
@@ -2878,7 +2918,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-04-02T16:11:54+00:00"
+            "time": "2019-04-16T20:11:45+00:00"
         },
         {
             "name": "wyrihaximus/doctrine-annotation-autoloader",
