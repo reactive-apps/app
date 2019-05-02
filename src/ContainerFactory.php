@@ -12,6 +12,7 @@ final class ContainerFactory
     {
         $definitions = iterator_to_array(DefinitionsGatherer::gather());
         $container = new ContainerBuilder();
+        $container->useAnnotations(true);
         foreach (ConfigurationLocator::locate() as $key => $value) {
             $definitions['config.' . $key] = $value;
         }
