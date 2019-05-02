@@ -578,6 +578,45 @@
             "time": "2018-03-21T22:21:57+00:00"
         },
         {
+            "name": "jetbrains/phpstorm-stubs",
+            "version": "v2019.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JetBrains/phpstorm-stubs.git",
+                "reference": "9e309771f362e979ecfb429303ad7a402c657234"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JetBrains/phpstorm-stubs/zipball/9e309771f362e979ecfb429303ad7a402c657234",
+                "reference": "9e309771f362e979ecfb429303ad7a402c657234",
+                "shasum": ""
+            },
+            "require-dev": {
+                "nikic/php-parser": "v4.0.1",
+                "php": "^7.1",
+                "phpdocumentor/reflection-docblock": "^4.3",
+                "phpunit/phpunit": "7.1.4"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "PHP runtime & extensions header files for PhpStorm",
+            "homepage": "https://www.jetbrains.com/phpstorm",
+            "keywords": [
+                "autocomplete",
+                "code",
+                "inference",
+                "inspection",
+                "jetbrains",
+                "phpstorm",
+                "stubs",
+                "type"
+            ],
+            "time": "2019-03-25T16:59:23+00:00"
+        },
+        {
             "name": "joshdifabio/composed",
             "version": "v1.0.0",
             "source": {
@@ -1112,16 +1151,16 @@
         },
         {
             "name": "php-di/php-di",
-            "version": "6.0.7",
+            "version": "6.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/PHP-DI.git",
-                "reference": "78326779037852fb8c13be606110434b9911eebd"
+                "reference": "a634876c69b643b779a89e4b7bec1ed1df803afc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/78326779037852fb8c13be606110434b9911eebd",
-                "reference": "78326779037852fb8c13be606110434b9911eebd",
+                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/a634876c69b643b779a89e4b7bec1ed1df803afc",
+                "reference": "a634876c69b643b779a89e4b7bec1ed1df803afc",
                 "shasum": ""
             },
             "require": {
@@ -1171,7 +1210,7 @@
                 "ioc",
                 "psr11"
             ],
-            "time": "2019-03-07T20:02:32+00:00"
+            "time": "2019-04-02T20:25:18+00:00"
         },
         {
             "name": "php-di/phpdoc-reader",
@@ -2314,28 +2353,30 @@
         },
         {
             "name": "roave/better-reflection",
-            "version": "3.2.0",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/BetterReflection.git",
-                "reference": "f54261a37683f9ce18237d95a4ecc2172fc205f3"
+                "reference": "68f10dcfa07ad1d829fcdad9d58979800a4bd025"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/BetterReflection/zipball/f54261a37683f9ce18237d95a4ecc2172fc205f3",
-                "reference": "f54261a37683f9ce18237d95a4ecc2172fc205f3",
+                "url": "https://api.github.com/repos/Roave/BetterReflection/zipball/68f10dcfa07ad1d829fcdad9d58979800a4bd025",
+                "reference": "68f10dcfa07ad1d829fcdad9d58979800a4bd025",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
+                "jetbrains/phpstorm-stubs": "2019.1",
                 "nikic/php-parser": "^4.0.4",
-                "php": ">=7.1.0,<7.4.0",
+                "php": ">=7.2.0,<7.4.0",
                 "phpdocumentor/reflection-docblock": "^4.1.1",
                 "phpdocumentor/type-resolver": "^0.4.0",
                 "roave/signature": "^1.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^5.0",
-                "phpunit/phpunit": "^7.0.0"
+                "doctrine/coding-standard": "^6.0",
+                "phpunit/phpunit": "^8.1.0"
             },
             "suggest": {
                 "composer/composer": "Required to use the ComposerSourceLocator"
@@ -2378,7 +2419,7 @@
                 }
             ],
             "description": "Better Reflection - an improved code reflection API",
-            "time": "2018-12-07T15:09:42+00:00"
+            "time": "2019-04-22T18:26:58+00:00"
         },
         {
             "name": "roave/signature",
@@ -2598,7 +2639,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -2835,12 +2876,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-broadcast.git",
-                "reference": "706395fd737880d62f827eaf354598e142a2b243"
+                "reference": "244a4ae734230a8b860c91bcdb7419b1b19b68ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-broadcast/zipball/706395fd737880d62f827eaf354598e142a2b243",
-                "reference": "706395fd737880d62f827eaf354598e142a2b243",
+                "url": "https://api.github.com/repos/WyriHaximus/php-broadcast/zipball/244a4ae734230a8b860c91bcdb7419b1b19b68ff",
+                "reference": "244a4ae734230a8b860c91bcdb7419b1b19b68ff",
                 "shasum": ""
             },
             "require": {
@@ -2878,7 +2919,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-04-02T16:11:54+00:00"
+            "time": "2019-04-16T20:11:45+00:00"
         },
         {
             "name": "wyrihaximus/doctrine-annotation-autoloader",
