@@ -520,7 +520,7 @@
             "time": "2014-12-15T23:03:51+00:00"
         },
         {
-            "name": "jeremeamia/SuperClosure",
+            "name": "jeremeamia/superclosure",
             "version": "2.4.0",
             "source": {
                 "type": "git",
@@ -1151,16 +1151,16 @@
         },
         {
             "name": "php-di/php-di",
-            "version": "6.0.8",
+            "version": "6.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI/PHP-DI.git",
-                "reference": "a634876c69b643b779a89e4b7bec1ed1df803afc"
+                "reference": "00a5eb0f0dd94deabb71acfbf44c37b80d53d0a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/a634876c69b643b779a89e4b7bec1ed1df803afc",
-                "reference": "a634876c69b643b779a89e4b7bec1ed1df803afc",
+                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/00a5eb0f0dd94deabb71acfbf44c37b80d53d0a1",
+                "reference": "00a5eb0f0dd94deabb71acfbf44c37b80d53d0a1",
                 "shasum": ""
             },
             "require": {
@@ -1210,7 +1210,7 @@
                 "ioc",
                 "psr11"
             ],
-            "time": "2019-04-02T20:25:18+00:00"
+            "time": "2019-07-08T07:24:22+00:00"
         },
         {
             "name": "php-di/phpdoc-reader",
@@ -2876,12 +2876,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-broadcast.git",
-                "reference": "244a4ae734230a8b860c91bcdb7419b1b19b68ff"
+                "reference": "9829e77fb0e5fee35c419265c152bf45d6716b3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-broadcast/zipball/244a4ae734230a8b860c91bcdb7419b1b19b68ff",
-                "reference": "244a4ae734230a8b860c91bcdb7419b1b19b68ff",
+                "url": "https://api.github.com/repos/WyriHaximus/php-broadcast/zipball/9829e77fb0e5fee35c419265c152bf45d6716b3e",
+                "reference": "9829e77fb0e5fee35c419265c152bf45d6716b3e",
                 "shasum": ""
             },
             "require": {
@@ -2919,7 +2919,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2019-04-16T20:11:45+00:00"
+            "time": "2019-06-23T13:02:51+00:00"
         },
         {
             "name": "wyrihaximus/doctrine-annotation-autoloader",
