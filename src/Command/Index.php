@@ -41,12 +41,12 @@ class Index implements Command
         $this->listCommand = $listCommand;
         $this->output = $output;
         $this->shutdown = $shutdown;
-        $loop->futureTick(function () {
+        $loop->futureTick(function (): void {
             $this->shutdown->onCompleted();
         });
     }
 
-    public function __invoke()
+    public function __invoke(): void
     {
         $this->listCommand->run(new ArgvInput(), $this->output);
     }

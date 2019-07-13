@@ -15,9 +15,9 @@ final class CommandLocator
                 if (!$fileinfo->isFile()) {
                     continue;
                 }
-                $fileName = $path . str_replace('/', '\\', $fileinfo->getFilename());
-                $class = $namespacePrefix . '\\' . substr(substr($fileName, strlen($path)), 0, -4);
-                if (class_exists($class) && !(new \ReflectionClass($class))->isInterface()) {
+                $fileName = $path . \str_replace('/', '\\', $fileinfo->getFilename());
+                $class = $namespacePrefix . '\\' . \substr(\substr($fileName, \strlen($path)), 0, -4);
+                if (\class_exists($class) && !(new \ReflectionClass($class))->isInterface()) {
                     yield $class;
                 }
             }

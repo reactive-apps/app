@@ -46,11 +46,11 @@ final class App
     private $booted = false;
 
     /**
-     * @param LoopInterface   $loop
-     * @param EventDispatcherInterface        $eventDispatcher
-     * @param Application     $application
-     * @param OutputInterface $output
-     * @param LoggerInterface $logger
+     * @param LoopInterface            $loop
+     * @param EventDispatcherInterface $eventDispatcher
+     * @param Application              $application
+     * @param OutputInterface          $output
+     * @param LoggerInterface          $logger
      */
     public function __construct(LoopInterface $loop, EventDispatcherInterface $eventDispatcher, Application $application, OutputInterface $output, LoggerInterface $logger)
     {
@@ -77,12 +77,11 @@ final class App
         $this->eventDispatcher->dispatch(new Boot());
 
         $exitCode = null;
-        $this->loop->futureTick(function () use ($argv, &$exitCode) {
+        $this->loop->futureTick(function () use ($argv, &$exitCode): void {
             $this->logger->debug('Running');
             try {
                 $exitCode = $this->application->run(new ArgvInput($argv), $this->output);
             } catch (\Throwable $et) {
-                echo (string)$et;
                 CallableThrowableLogger::create($this->logger)($et);
             }
         });

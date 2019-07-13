@@ -1,6 +1,8 @@
 <?php declare(strict_types=1);
 
 use Bramus\Monolog\Formatter\ColoredLineFormatter;
+use function DI\factory;
+use function DI\get;
 use Monolog\Handler\PsrHandler;
 use Monolog\Logger;
 use Monolog\Processor;
@@ -16,8 +18,6 @@ use WyriHaximus\Monolog\Processors\RuntimeProcessor;
 use WyriHaximus\Monolog\Processors\ToContextProcessor;
 use WyriHaximus\Monolog\Processors\TraceProcessor;
 use WyriHaximus\React\PSR3\Stdio\StdioLogger;
-use function DI\factory;
-use function DI\get;
 
 return (function () {
     return [
@@ -29,7 +29,7 @@ return (function () {
             iterable $handlers = [],
             iterable $processors = []
         ) {
-            $logger = new Logger(strtolower($name));
+            $logger = new Logger(\strtolower($name));
             $logger->pushProcessor(new ToContextProcessor());
             $logger->pushProcessor(new TraceProcessor());
             $logger->pushProcessor(new KeyValueProcessor('version', $version));
@@ -56,7 +56,7 @@ return (function () {
                 $logger->pushHandler($handler);
             }
 
-            $shutdown->subscribe(null, null, function () use ($logger) {
+            $shutdown->subscribe(null, null, function () use ($logger): void {
                 $logger->setHandlers([
                     new PsrHandler(
                         new ConsoleLogger(

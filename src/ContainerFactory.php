@@ -10,7 +10,7 @@ final class ContainerFactory
 {
     public static function create(): ContainerInterface
     {
-        $definitions = iterator_to_array(DefinitionsGatherer::gather());
+        $definitions = \iterator_to_array(DefinitionsGatherer::gather());
         $container = new ContainerBuilder();
         $container->useAnnotations(true);
         foreach (ConfigurationLocator::locate() as $key => $value) {

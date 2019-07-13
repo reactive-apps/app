@@ -11,8 +11,8 @@ use WyriHaximus\PSR3\ContextLogger\ContextLogger;
 final class Signals
 {
     private const SIGNALS = [
-        SIGTERM,
-        SIGINT,
+        \SIGTERM => 'SIGTERM',
+        \SIGINT => 'SIGINT',
     ];
 
     /** @var LoggerInterface */
@@ -25,8 +25,8 @@ final class Signals
     private $eventDispatcher;
 
     /**
-     * @param LoggerInterface $logger
-     * @param LoopInterface $loop
+     * @param LoggerInterface          $logger
+     * @param LoopInterface            $loop
      * @param EventDispatcherInterface $eventDispatcher
      */
     public function __construct(LoggerInterface $logger, LoopInterface $loop, EventDispatcherInterface $eventDispatcher)
@@ -42,35 +42,24 @@ final class Signals
         $this->eventDispatcher = $eventDispatcher;
     }
 
-    public function __invoke()
+    public function __invoke(): void
     {
-
         $this->logger->debug('Setting up');
 
-        $handler = function ($signal) use (&$handler) {
-            switch ($signal) {
-                case SIGTERM:
-                    $signalName = 'SIGTERM';
-                    break;
-                case SIGINT:
-                    $signalName = 'SIGINT';
-                    break;
-                default:
-                    $signalName = 'unknown signal';
-                    break;
-            }
+        $handler = function (int $signal) use (&$handler): void {
+            $signalName = self::SIGNALS[$signal] ?? 'unknown signal';
             $this->logger->debug('Caught: ' . $signalName);
             $this->eventDispatcher->dispatch(new Shutdown());
             $this->logger->notice('Shutdown issued');
-
 
             foreach (self::SIGNALS as $signal) {
                 $this->loop->removeSignal($signal, $handler);
             }
         };
 
-        foreach (self::SIGNALS as $signal) {
+        foreach (self::SIGNALS as $signal => $signalName) {
             $this->loop->addSignal($signal, $handler);
+            $this->logger->debug('Added signal listener: ' . $signalName);
         }
     }
 }

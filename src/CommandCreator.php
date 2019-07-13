@@ -6,11 +6,8 @@ use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
 use Recoil\Kernel;
-use Recoil\React\ReactKernel;
 use ReflectionClass;
 use Roave\BetterReflection\BetterReflection;
-use Symfony\Component\Console\Input\ArgvInput;
-use WyriHaximus\PSR3\CallableThrowableLogger\CallableThrowableLogger;
 
 final class CommandCreator
 {
@@ -28,7 +25,6 @@ final class CommandCreator
      * @var ContainerInterface
      */
     private $container;
-
 
     /**
      * @param Kernel             $kernel
@@ -53,7 +49,7 @@ final class CommandCreator
             $parameters[] = ((string)$parameter->getType()) . ' ' . ($parameter->isVariadic() ? '...' : '') . '$' . $parameter->getName();
         }
 
-        $eval = 'return function (' . implode(', ', $parameters) . ') use ($class, $container, $recoil, $logger) {
+        $eval = 'return function (' . \implode(', ', $parameters) . ') use ($class, $container, $recoil, $logger) {
             $command = $container->get($class);
             $args = func_get_args();
             $recoil->execute(function () use ($command, $args, $logger) {
@@ -65,7 +61,6 @@ final class CommandCreator
             });
         };';
 
-        //echo $eval;
         $callable = eval($eval);
 
         return [$command, $callable];

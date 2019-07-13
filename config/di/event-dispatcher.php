@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
+use function DI\factory;
 use Psr\Container\ContainerInterface;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Log\LoggerInterface;
 use WyriHaximus\Broadcast\ComposerJsonListenerProvider;
 use WyriHaximus\Broadcast\Dispatcher;
 use WyriHaximus\PSR3\ContextLogger\ContextLogger;
-use function DI\factory;
 
 return (function () {
     return [
