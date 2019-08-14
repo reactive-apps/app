@@ -1,7 +1,6 @@
 <?php declare(strict_types=1);
 
 use Bramus\Monolog\Formatter\ColoredLineFormatter;
-use function DI\autowire;
 use function DI\factory;
 use function DI\get;
 use Monolog\Logger;
@@ -18,14 +17,16 @@ use WyriHaximus\React\PSR3\Stdio\StdioLogger;
 
 return (function () {
     return [
-        LoggerInterface::class => autowire(Logger::class),
+        LoggerInterface::class => factory(function (Logger $logger): LoggerInterface {
+            return $logger;
+        }),
         Logger::class => factory(function (
             LoopInterface $loop,
             string $name,
             string $version,
             iterable $handlers = [],
             iterable $processors = []
-        ) {
+        ): Logger {
             $logger = new Logger(\strtolower($name));
             $logger->pushProcessor(new ToContextProcessor());
             $logger->pushProcessor(new TraceProcessor());
