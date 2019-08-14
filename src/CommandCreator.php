@@ -53,7 +53,7 @@ final class CommandCreator
             $parameters[] = ((string)$parameter->getType()) . ' ' . ($parameter->isVariadic() ? '...' : '') . '$' . $parameter->getName();
         }
 
-        $eval = 'return function (' . \implode(', ', $parameters) . ') use ($class, $container, $recoil, $logger) {
+        $eval = 'return function (' . \implode(', ', $parameters) . ') use ($class, $container, $recoil, $logger, $coroutineWrapper) {
             $command = $container->get($class);
             $args = func_get_args();
             return $coroutineWrapper->call(function () use ($command, $args, $logger) {
