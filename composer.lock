@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dec1b938392c0d5292f07ff7d1e1e58d",
+    "content-hash": "d9b0d310cd1d9b6977f7dffe72167c86",
     "packages": [
+        {
+            "name": "api-clients/rx",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-api-clients/rx.git",
+                "reference": "c38d42768ebdb6e396066bc03055c3c9117bc6e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-api-clients/rx/zipball/c38d42768ebdb6e396066bc03055c3c9117bc6e9",
+                "reference": "c38d42768ebdb6e396066bc03055c3c9117bc6e9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "react/promise": "^2.4",
+                "reactivex/rxphp": "^2.0"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^3.0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ApiClients\\Tools\\Rx\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php",
+                    "src/bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "time": "2017-10-04T20:00:12+00:00"
+        },
         {
             "name": "bramus/ansi-php",
             "version": "3.0.2",
@@ -520,7 +564,7 @@
             "time": "2014-12-15T23:03:51+00:00"
         },
         {
-            "name": "jeremeamia/superclosure",
+            "name": "jeremeamia/SuperClosure",
             "version": "2.4.0",
             "source": {
                 "type": "git",
@@ -2639,7 +2683,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -3469,6 +3513,188 @@
             "notification-url": "https://packagist.org/downloads/",
             "description": "Symfony Console wrapper around clue/stdio-react",
             "time": "2018-12-25T19:32:14+00:00"
+        },
+        {
+            "name": "wyrihaximus/recoil-promise-coroutine-wrapper",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/recoilphp-promise-coroutine-wrapper.git",
+                "reference": "5e17ccccc42d58cc93d4f2b08b3ce0bd9d7f45ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/recoilphp-promise-coroutine-wrapper/zipball/5e17ccccc42d58cc93d4f2b08b3ce0bd9d7f45ac",
+                "reference": "5e17ccccc42d58cc93d4f2b08b3ce0bd9d7f45ac",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "wyrihaximus/recoil-queue-caller": "^2.1",
+                "wyrihaximus/recoil-queue-caller-pool": "^1.2"
+            },
+            "require-dev": {
+                "wyrihaximus/async-test-utilities": "^1.1",
+                "wyrihaximus/ticking-promise": "^1.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\Recoil\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "A simple API around WyriHaximus/recoil-queue-caller(-pool)",
+            "time": "2019-05-24T15:19:41+00:00"
+        },
+        {
+            "name": "wyrihaximus/recoil-queue-caller",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/recoilphp-queue-caller.git",
+                "reference": "1965afd96f2909a027174dbce0282310f42f69d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/recoilphp-queue-caller/zipball/1965afd96f2909a027174dbce0282310f42f69d0",
+                "reference": "1965afd96f2909a027174dbce0282310f42f69d0",
+                "shasum": ""
+            },
+            "require": {
+                "api-clients/rx": "^2.2",
+                "php": "^7.2",
+                "react/event-loop": "^1.0",
+                "reactivex/rxphp": "^2.0",
+                "recoil/react": "^1.0",
+                "recoil/recoil": "^1.0",
+                "wyrihaximus/rx-recoil-looper": "^1.0"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^5.4",
+                "ringcentral/psr7": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\Recoil\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Call all callables from the observable from within a RecoilPHP coroutine",
+            "time": "2019-01-01T21:39:25+00:00"
+        },
+        {
+            "name": "wyrihaximus/recoil-queue-caller-pool",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/recoilphp-queue-caller-pool.git",
+                "reference": "ce2dbc1eb19d54f7f11c9b763a5bf5eda836543b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/recoilphp-queue-caller-pool/zipball/ce2dbc1eb19d54f7f11c9b763a5bf5eda836543b",
+                "reference": "ce2dbc1eb19d54f7f11c9b763a5bf5eda836543b",
+                "shasum": ""
+            },
+            "require": {
+                "api-clients/rx": "^2.2",
+                "php": "^7.2",
+                "react/event-loop": "^1.0",
+                "reactivex/rxphp": "^2.0",
+                "recoil/react": "^1.0",
+                "recoil/recoil": "^1.0",
+                "wyrihaximus/recoil-queue-caller": "^2.1"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^5.4",
+                "wyrihaximus/ticking-promise": "^1.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\Recoil\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Pool wyrihaximus/recoil-queue-caller",
+            "time": "2019-01-23T21:15:42+00:00"
+        },
+        {
+            "name": "wyrihaximus/rx-recoil-looper",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/php-rxphp-recoilphp-looper.git",
+                "reference": "3ed88901261f2bf7ed03d21ba38138abd9bed20c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/php-rxphp-recoilphp-looper/zipball/3ed88901261f2bf7ed03d21ba38138abd9bed20c",
+                "reference": "3ed88901261f2bf7ed03d21ba38138abd9bed20c",
+                "shasum": ""
+            },
+            "require": {
+                "api-clients/rx": "^2.2",
+                "php": "^7.2",
+                "react/event-loop": "^1.0",
+                "reactivex/rxphp": "^2.0",
+                "recoil/react": "^1.0",
+                "recoil/recoil": "^1.0"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^5.4",
+                "ringcentral/psr7": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WyriHaximus\\Rx\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Looper functions for while and foreach around rxphp using recoil",
+            "time": "2019-01-26T17:53:18+00:00"
         }
     ],
     "packages-dev": [

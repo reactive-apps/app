@@ -1,16 +1,13 @@
 <?php declare(strict_types=1);
 
 use Bramus\Monolog\Formatter\ColoredLineFormatter;
+use function DI\autowire;
 use function DI\factory;
 use function DI\get;
-use Monolog\Handler\PsrHandler;
 use Monolog\Logger;
 use Monolog\Processor;
 use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
-use ReactiveApps\Rx\Shutdown;
-use Symfony\Component\Console\Logger\ConsoleLogger;
-use Symfony\Component\Console\Output\ConsoleOutput;
 use WyriHaximus\Monolog\FormattedPsrHandler\FormattedPsrHandler;
 use WyriHaximus\Monolog\Processors\ExceptionClassProcessor;
 use WyriHaximus\Monolog\Processors\KeyValueProcessor;
@@ -21,9 +18,9 @@ use WyriHaximus\React\PSR3\Stdio\StdioLogger;
 
 return (function () {
     return [
-        LoggerInterface::class => factory(function (
+        LoggerInterface::class => autowire(Logger::class),
+        Logger::class => factory(function (
             LoopInterface $loop,
-            Shutdown $shutdown,
             string $name,
             string $version,
             iterable $handlers = [],
@@ -42,7 +39,6 @@ return (function () {
             foreach ($processors as $processor) {
                 $logger->pushProcessor($processor);
             }
-            //$logger->pushHandler(new PsrHandler(LogglyLogger::create($loop, require SECRETS . 'loggly.php'), Logger::INFO));
             $consoleHandler = new FormattedPsrHandler(StdioLogger::create($loop)->withHideLevel(true));
             $consoleHandler->setFormatter(new ColoredLineFormatter(
                 null,
@@ -55,19 +51,6 @@ return (function () {
             foreach ($handlers as $handler) {
                 $logger->pushHandler($handler);
             }
-
-            $shutdown->subscribe(null, null, function () use ($logger): void {
-                $logger->setHandlers([
-                    new PsrHandler(
-                        new ConsoleLogger(
-                            new ConsoleOutput(
-                                ConsoleOutput::VERBOSITY_DEBUG,
-                                true
-                            )
-                        )
-                    ),
-                ]);
-            });
 
             return $logger;
         })->

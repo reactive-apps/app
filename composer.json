@@ -30,7 +30,8 @@
         "wyrihaximus/psr-3-filter": "^1.1",
         "wyrihaximus/react-psr-3-loggly": "^2.0",
         "wyrihaximus/react-psr-3-stdio": "^2.0",
-        "wyrihaximus/react-stdio-symfony-console": "^1.0"
+        "wyrihaximus/react-stdio-symfony-console": "^1.0",
+        "wyrihaximus/recoil-promise-coroutine-wrapper": "^1.0"
     },
     "require-dev": {
         "api-clients/test-utilities": "^5.0",
@@ -49,6 +50,10 @@
             "listeners": {
                 "ReactiveApps\\Event\\Boot": [
                     "src/Listener/Signals.php"
+                ],
+                "ReactiveApps\\Event\\Shutdown": [
+                    "src/Listener/Logger.php",
+                    "src/Listener/Output.php"
                 ]
             }
         }

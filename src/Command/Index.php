@@ -2,8 +2,6 @@
 
 namespace ReactiveApps\Command;
 
-use React\EventLoop\LoopInterface;
-use ReactiveApps\Rx\Shutdown;
 use Silly\Application;
 use Symfony\Component\Console\Command\ListCommand;
 use Symfony\Component\Console\Input\ArgvInput;
@@ -24,30 +22,21 @@ class Index implements Command
     private $output;
 
     /**
-     * @var Shutdown
-     */
-    private $shutdown;
-
-    /**
-     * @param Shutdown        $shutdown
      * @param OutputInterface $output
      * @param Application     $app
-     * @param LoopInterface   $loop
      */
-    public function __construct(Shutdown $shutdown, OutputInterface $output, Application $app, LoopInterface $loop)
+    public function __construct(OutputInterface $output, Application $app)
     {
         $listCommand = new ListCommand('list');
         $listCommand->setApplication($app);
         $this->listCommand = $listCommand;
         $this->output = $output;
-        $this->shutdown = $shutdown;
-        $loop->futureTick(function (): void {
-            $this->shutdown->onCompleted();
-        });
     }
 
-    public function __invoke(): void
+    public function __invoke()
     {
         $this->listCommand->run(new ArgvInput(), $this->output);
+
+        return true;
     }
 }

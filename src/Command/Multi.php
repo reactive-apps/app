@@ -5,6 +5,8 @@ namespace ReactiveApps\Command;
 use Psr\Container\ContainerInterface;
 use ReactiveApps\CommandLocator;
 use ReflectionClass;
+use function React\Promise\all;
+use function React\Promise\resolve;
 
 class Multi implements Command
 {
@@ -26,13 +28,19 @@ class Multi implements Command
 
     public function __invoke(array $c)
     {
+        $promises = [];
+
         foreach (CommandLocator::locate() as $class) {
             if (!\in_array((new ReflectionClass($class))->getConstant('COMMAND'), $c, true)) {
                 continue;
             }
 
             $command = $this->container->get($class);
-            yield $command();
+            $promises[] = resolve(yield $command());
         }
+
+        return yield all($promises)->then(function () {
+            return true;
+        });
     }
 }

@@ -7,6 +7,7 @@ use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
 use ReactiveApps\Event\Boot;
 use ReactiveApps\Event\PreBoot;
+use ReactiveApps\Event\Shutdown;
 use Silly\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -81,6 +82,7 @@ final class App
             $this->logger->debug('Running');
             try {
                 $exitCode = $this->application->run(new ArgvInput($argv), $this->output);
+//                $this->eventDispatcher->dispatch(new Shutdown());
             } catch (\Throwable $et) {
                 CallableThrowableLogger::create($this->logger)($et);
             }
