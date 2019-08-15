@@ -4,6 +4,7 @@ namespace ReactiveApps\Command;
 
 use Psr\Container\ContainerInterface;
 use ReactiveApps\CommandLocator;
+use ReactiveApps\ExitCode;
 use ReflectionClass;
 use function React\Promise\all;
 use function React\Promise\resolve;
@@ -39,8 +40,14 @@ class Multi implements Command
             $promises[] = resolve(yield $command());
         }
 
-        return yield all($promises)->then(function () {
-            return true;
+        return yield all($promises)->then(function ($exitCodes) {
+            foreach ($exitCodes as $exitCode) {
+                if ($exitCode !== ExitCode::SUCCESS) {
+                    return $exitCode;
+                }
+            }
+
+            ExitCode::SUCCESS;
         });
     }
 }

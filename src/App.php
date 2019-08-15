@@ -80,16 +80,17 @@ final class App
         $exitCode = null;
         $this->loop->futureTick(function () use ($argv, &$exitCode): void {
             $this->logger->debug('Running');
-            try {
-                $exitCode = $this->application->run(new ArgvInput($argv), $this->output);
-//                $this->eventDispatcher->dispatch(new Shutdown());
-            } catch (\Throwable $et) {
-                CallableThrowableLogger::create($this->logger)($et);
-            }
         });
-
         $this->logger->debug('Starting loop');
-        $this->loop->run();
+
+        $exitCode = ExitCode::FAILURE;
+        try {
+            $exitCode = $this->application->run(new ArgvInput($argv), $this->output);
+            $this->eventDispatcher->dispatch(new Shutdown());
+        } catch (\Throwable $et) {
+            CallableThrowableLogger::create($this->logger)($et);
+        }
+
         $this->logger->debug('Execution completed with exit code: ' . $exitCode);
 
         return $exitCode;

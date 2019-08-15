@@ -14,6 +14,11 @@ use WyriHaximus\Recoil\PromiseCoroutineWrapper;
 final class CommandCreator
 {
     /**
+     * @var LoopInterface
+     */
+    private $loop;
+
+    /**
      * @var Kernel
      */
     private $recoil;
@@ -29,19 +34,22 @@ final class CommandCreator
     private $container;
 
     /**
-     * @param Kernel             $kernel
-     * @param LoggerInterface    $logger
+     * @param LoopInterface $loop
+     * @param Kernel $recoil
+     * @param LoopInterface $logger
      * @param ContainerInterface $container
      */
-    public function __construct(Kernel $kernel, LoggerInterface $logger, ContainerInterface $container)
+    public function __construct(LoopInterface $loop, Kernel $recoil, LoopInterface $logger, ContainerInterface $container)
     {
-        $this->recoil = $kernel;
+        $this->loop = $loop;
+        $this->recoil = $recoil;
         $this->logger = $logger;
         $this->container = $container;
     }
 
     public function create(string $class): array
     {
+        $loop = $this->loop;
         $container = $this->container;
         $recoil = $this->recoil;
         $logger = $this->logger;
@@ -53,17 +61,17 @@ final class CommandCreator
             $parameters[] = ((string)$parameter->getType()) . ' ' . ($parameter->isVariadic() ? '...' : '') . '$' . $parameter->getName();
         }
 
-        $eval = 'return function (' . \implode(', ', $parameters) . ') use ($class, $container, $recoil, $logger, $coroutineWrapper) {
+        $eval = 'return function (' . \implode(', ', $parameters) . ') use ($class, $container, $loop, $recoil, $logger, $coroutineWrapper) {
             $command = $container->get($class);
             $args = func_get_args();
-            return $coroutineWrapper->call(function () use ($command, $args, $logger) {
+            return Clue\React\Block\await($coroutineWrapper->call(function () use ($command, $args, $logger) {
                 try {
                     return (yield $command(...$args));
                 } catch (\Throwable $et) {
                     \WyriHaximus\PSR3\CallableThrowableLogger\CallableThrowableLogger::create($logger)($et);
                     return false;
                 }
-            });
+            }), $loop);
         };';
 
         $callable = eval($eval);

@@ -2,6 +2,7 @@
 
 namespace ReactiveApps\Command;
 
+use ReactiveApps\ExitCode;
 use Silly\Application;
 use Symfony\Component\Console\Command\ListCommand;
 use Symfony\Component\Console\Input\ArgvInput;
@@ -37,6 +38,6 @@ class Index implements Command
     {
         $this->listCommand->run(new ArgvInput(), $this->output);
 
-        return true;
+        return ExitCode::SUCCESS;
     }
 }
