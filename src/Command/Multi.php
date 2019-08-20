@@ -3,11 +3,11 @@
 namespace ReactiveApps\Command;
 
 use Psr\Container\ContainerInterface;
+use function React\Promise\all;
+use function React\Promise\resolve;
 use ReactiveApps\CommandLocator;
 use ReactiveApps\ExitCode;
 use ReflectionClass;
-use function React\Promise\all;
-use function React\Promise\resolve;
 
 class Multi implements Command
 {

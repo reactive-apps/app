@@ -3,7 +3,6 @@
 namespace ReactiveApps;
 
 use Psr\Container\ContainerInterface;
-use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
 use Recoil\Kernel;
 use ReflectionClass;
@@ -34,9 +33,9 @@ final class CommandCreator
     private $container;
 
     /**
-     * @param LoopInterface $loop
-     * @param Kernel $recoil
-     * @param LoopInterface $logger
+     * @param LoopInterface      $loop
+     * @param Kernel             $recoil
+     * @param LoopInterface      $logger
      * @param ContainerInterface $container
      */
     public function __construct(LoopInterface $loop, Kernel $recoil, LoopInterface $logger, ContainerInterface $container)
