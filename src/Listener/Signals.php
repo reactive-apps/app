@@ -5,7 +5,7 @@ namespace ReactiveApps\Listener;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Log\LoggerInterface;
 use React\EventLoop\LoopInterface;
-use ReactiveApps\Event\Shutdown;
+use ReactiveApps\LifeCycleEvents\Shutdown;
 use WyriHaximus\PSR3\ContextLogger\ContextLogger;
 
 final class Signals
