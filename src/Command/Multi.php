@@ -3,15 +3,34 @@
 namespace ReactiveApps\Command;
 
 use Psr\Container\ContainerInterface;
-use function React\Promise\all;
-use function React\Promise\resolve;
+use React\EventLoop\LoopInterface;
 use ReactiveApps\CommandLocator;
 use ReactiveApps\ExitCode;
+use Recoil\Kernel;
 use ReflectionClass;
+use function React\Promise\all;
+use function React\Promise\resolve;
+use WyriHaximus\Recoil\InfiniteCaller;
+use WyriHaximus\Recoil\PromiseCoroutineWrapper;
 
 class Multi implements Command
 {
     const COMMAND = 'multi c*';
+
+    /**
+     * @var LoopInterface
+     */
+    private $loop;
+
+    /**
+     * @var Kernel
+     */
+    private $recoil;
+
+    /**
+     * @var LoopInterface
+     */
+    private $logger;
 
     /**
      * @var ContainerInterface
@@ -19,16 +38,22 @@ class Multi implements Command
     private $container;
 
     /**
-     * Multi constructor.
+     * @param LoopInterface $loop
+     * @param Kernel $recoil
+     * @param LoopInterface $logger
      * @param ContainerInterface $container
      */
-    public function __construct(ContainerInterface $container)
+    public function __construct(LoopInterface $loop, Kernel $recoil, LoopInterface $logger, ContainerInterface $container)
     {
+        $this->loop = $loop;
+        $this->recoil = $recoil;
+        $this->logger = $logger;
         $this->container = $container;
     }
 
     public function __invoke(array $c)
     {
+        $coroutineWrapper = PromiseCoroutineWrapper::createFromQueueCaller(new InfiniteCaller($this->recoil));
         $promises = [];
 
         foreach (CommandLocator::locate() as $class) {
@@ -36,8 +61,14 @@ class Multi implements Command
                 continue;
             }
 
-            $command = $this->container->get($class);
-            $promises[] = resolve(yield $command());
+            try {
+                $command = $this->container->get($class);
+                $promises[$class] = $coroutineWrapper->call(function () use ($command) {
+                    return (yield $command());
+                });
+            } catch (\Throwable $throwable) {
+                echo $throwable;
+            }
         }
 
         return yield all($promises)->then(function ($exitCodes) {

@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "a0fd6c7ca32a692d6a7dfb8f83ffbc64",
@@ -625,7 +625,7 @@
             "time": "2014-12-15T23:03:51+00:00"
         },
         {
-            "name": "jeremeamia/SuperClosure",
+            "name": "jeremeamia/superclosure",
             "version": "2.4.0",
             "source": {
                 "type": "git",
@@ -664,9 +664,9 @@
             "authors": [
                 {
                     "name": "Jeremy Lindblom",
+                    "role": "Developer",
                     "email": "jeremeamia@gmail.com",
-                    "homepage": "https://github.com/jeremeamia",
-                    "role": "Developer"
+                    "homepage": "https://github.com/jeremeamia"
                 }
             ],
             "description": "Serialize Closure objects, including their context and binding",
@@ -2096,12 +2096,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactive-apps/life-cycle-events.git",
-                "reference": "399b8ace2d943d7961b24a570baebbeb9b4df251"
+                "reference": "07c325980d46dec4a30f29f909d52e57bb43d599"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactive-apps/life-cycle-events/zipball/399b8ace2d943d7961b24a570baebbeb9b4df251",
-                "reference": "399b8ace2d943d7961b24a570baebbeb9b4df251",
+                "url": "https://api.github.com/repos/reactive-apps/life-cycle-events/zipball/07c325980d46dec4a30f29f909d52e57bb43d599",
+                "reference": "07c325980d46dec4a30f29f909d52e57bb43d599",
                 "shasum": ""
             },
             "require": {
@@ -2116,10 +2116,10 @@
                 "reactive-apps": {
                     "listeners": {
                         "ReactiveApps\\LifeCycleEvents\\Boot": [
-                            "src/Listener/Boot.php"
+                            "src/Promise/Boot.php"
                         ],
                         "ReactiveApps\\LifeCycleEvents\\PreBoot": [
-                            "src/Listener/PreBoot.php"
+                            "src/Promise/PreBoot.php"
                         ],
                         "ReactiveApps\\LifeCycleEvents\\Shutdown": [
                             "src/Promise/Shutdown.php"
@@ -2133,7 +2133,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2019-08-21T06:25:49+00:00"
+            "time": "2019-08-22T06:22:17+00:00"
         },
         {
             "name": "reactivex/rxphp",
@@ -6378,18 +6378,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "email": "sebastian@phpeople.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpeople.de"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
@@ -6425,18 +6425,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "email": "sebastian@phpeople.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpeople.de"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library for handling version information and constraints",
@@ -6990,8 +6990,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "FilterIterator implementation that filters files based on a list of suffixes.",
@@ -7032,8 +7032,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Simple template engine.",
@@ -7938,8 +7938,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
