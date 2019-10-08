@@ -3283,26 +3283,26 @@
         },
         {
             "name": "wyrihaximus/monolog-formatted-psr-handler",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-monolog-formatted-psr-handler.git",
-                "reference": "af1ef4fe6ebe72e405bce86b686e2635e2f3ad80"
+                "reference": "70eb4e8d83c1c6b8a2f71a29f43026778b12b25a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-monolog-formatted-psr-handler/zipball/af1ef4fe6ebe72e405bce86b686e2635e2f3ad80",
-                "reference": "af1ef4fe6ebe72e405bce86b686e2635e2f3ad80",
+                "url": "https://api.github.com/repos/WyriHaximus/php-monolog-formatted-psr-handler/zipball/70eb4e8d83c1c6b8a2f71a29f43026778b12b25a",
+                "reference": "70eb4e8d83c1c6b8a2f71a29f43026778b12b25a",
                 "shasum": ""
             },
             "require": {
-                "monolog/monolog": "^1.23",
+                "monolog/monolog": "^1.23 || ^2.0",
                 "php": "^7.2",
                 "psr/log": "^1.0"
             },
             "require-dev": {
-                "api-clients/cs-fixer-config": "^1.1",
-                "api-clients/test-utilities": "^5.2"
+                "wyrihaximus/cs-fixer-config": "^1.0",
+                "wyrihaximus/test-utilities": "^1.1"
             },
             "type": "library",
             "autoload": {
@@ -3321,7 +3321,7 @@
                 }
             ],
             "description": "Passes `formatted` instead of `message` to the PSR-3 logger",
-            "time": "2018-12-25T11:42:22+00:00"
+            "time": "2019-09-16T22:04:19+00:00"
         },
         {
             "name": "wyrihaximus/monolog-processors",
