@@ -624,7 +624,7 @@
             "time": "2014-12-15T23:03:51+00:00"
         },
         {
-            "name": "jeremeamia/SuperClosure",
+            "name": "jeremeamia/superclosure",
             "version": "2.4.0",
             "source": {
                 "type": "git",
@@ -1172,16 +1172,16 @@
         },
         {
             "name": "php-di-definitions/react-recoil",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/reactphp-recoilphp.git",
-                "reference": "2f49c2c56d1385a430561868131e32d129221f73"
+                "reference": "f7d1f3994a434efa7bea9bb6e13355795e3bbe07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-recoilphp/zipball/2f49c2c56d1385a430561868131e32d129221f73",
-                "reference": "2f49c2c56d1385a430561868131e32d129221f73",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-recoilphp/zipball/f7d1f3994a434efa7bea9bb6e13355795e3bbe07",
+                "reference": "f7d1f3994a434efa7bea9bb6e13355795e3bbe07",
                 "shasum": ""
             },
             "require": {
@@ -1190,7 +1190,7 @@
                 "react/event-loop": "^1.0",
                 "recoil/react": "^1.0",
                 "recoil/recoil": "^1.0",
-                "wyrihaximus/psr-3-callable-throwable-logger": "^1.0",
+                "wyrihaximus/psr-3-callable-throwable-logger": "^2.0 || ^1.0",
                 "wyrihaximus/psr-3-context-logger": "^1.0"
             },
             "require-dev": {
@@ -1209,7 +1209,7 @@
                 "MIT"
             ],
             "description": "PHP-DI definition for using RecoilPHP with ReactPHP",
-            "time": "2018-11-02T06:45:45+00:00"
+            "time": "2020-01-26T16:49:40+00:00"
         },
         {
             "name": "php-di/invoker",
@@ -5288,9 +5288,9 @@
             "authors": [
                 {
                     "name": "Christian Weiske",
-                    "role": "Developer",
                     "email": "cweiske@cweiske.de",
-                    "homepage": "http://github.com/cweiske/jsonmapper/"
+                    "homepage": "http://github.com/cweiske/jsonmapper/",
+                    "role": "Developer"
                 }
             ],
             "description": "Map nested JSON structures onto PHP classes",
@@ -6829,8 +6829,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Utility class for timing",
@@ -7643,8 +7643,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "role": "lead",
-                    "email": "sebastian@phpunit.de"
+                    "email": "sebastian@phpunit.de",
+                    "role": "lead"
                 }
             ],
             "description": "Collection of value objects that represent the types of the PHP type system",
@@ -8609,8 +8609,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
