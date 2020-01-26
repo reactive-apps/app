@@ -3,7 +3,7 @@
     "prefer-stable": true,
     "name": "reactive-apps/app",
     "require": {
-        "php": "^7.2",
+        "php": "^7.4",
         "bramus/monolog-colored-line-formatter": "^3.0",
         "clue/block-react": "^1.3",
         "doctrine/annotations": "^1.4",
@@ -27,10 +27,9 @@
         "wyrihaximus/get-in-packages-composer.jason": "^1.0",
         "wyrihaximus/monolog-formatted-psr-handler": "^1.0",
         "wyrihaximus/monolog-processors": "^1.1",
-        "wyrihaximus/psr-3-callable-throwable-logger": "^1.0",
+        "wyrihaximus/psr-3-callable-throwable-logger": "^2.0 || ^1.0",
         "wyrihaximus/psr-3-context-logger": "^1.0",
         "wyrihaximus/psr-3-filter": "^1.1",
-        "wyrihaximus/react-psr-3-loggly": "^2.0",
         "wyrihaximus/react-psr-3-stdio": "^2.0",
         "wyrihaximus/react-stdio-symfony-console": "^1.0",
         "wyrihaximus/recoil-promise-coroutine-wrapper": "^1.0"
@@ -63,7 +62,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "7.2"
+            "php": "7.4"
         }
     },
     "autoload": {
