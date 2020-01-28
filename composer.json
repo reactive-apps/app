@@ -10,7 +10,7 @@
         "league/tactician": "^1.0",
         "league/tactician-container": "^2.0",
         "mnapoli/silly": "^1.7",
-        "monolog/monolog": "^1.23",
+        "monolog/monolog": "^2.0",
         "php-di-definitions/definitions-gatherer": "^1.0",
         "php-di-definitions/react-event-loop": "^1.0",
         "php-di-definitions/react-recoil": "^1.0",
@@ -36,7 +36,7 @@
     },
     "require-dev": {
         "api-clients/test-utilities": "^5.0",
-        "monolog/monolog": "^1.23"
+        "monolog/monolog": "^2.0"
     },
     "extra": {
         "php-di-definitions": {
