@@ -3217,27 +3217,26 @@
         },
         {
             "name": "wyrihaximus/psr-3-callable-throwable-logger",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-psr-3-callable-throwable-logger.git",
-                "reference": "0720712591ffdfd635315b782f9fecb1fe9a40c8"
+                "reference": "ad84ed15ee2d72a71cf752e236e90fdd773890fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-psr-3-callable-throwable-logger/zipball/0720712591ffdfd635315b782f9fecb1fe9a40c8",
-                "reference": "0720712591ffdfd635315b782f9fecb1fe9a40c8",
+                "url": "https://api.github.com/repos/WyriHaximus/php-psr-3-callable-throwable-logger/zipball/ad84ed15ee2d72a71cf752e236e90fdd773890fe",
+                "reference": "ad84ed15ee2d72a71cf752e236e90fdd773890fe",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3",
+                "php": "^7.4",
                 "psr/log": "^1.0",
-                "thecodingmachine/safe": "^0.1.16"
+                "thecodingmachine/safe": "^1.0 || ^0.1.16"
             },
             "require-dev": {
-                "wyrihaximus/cs-fixer-config": "^1.0",
                 "wyrihaximus/psr-3-utilities": "^1.0",
-                "wyrihaximus/test-utilities": "^1.1"
+                "wyrihaximus/test-utilities": "^2.0"
             },
             "type": "library",
             "autoload": {
@@ -3256,7 +3255,7 @@
                 }
             ],
             "description": "callable throwable decorator around a PSR-3 logger (to be used with react/promise and reactivex/rxphp)",
-            "time": "2019-09-17T20:51:59+00:00"
+            "time": "2020-03-21T21:52:11+00:00"
         },
         {
             "name": "wyrihaximus/psr-3-context-logger",
@@ -4757,6 +4756,7 @@
             ],
             "description": "This tool check syntax of PHP files about 20x faster than serial check.",
             "homepage": "https://github.com/JakubOnderka/PHP-Parallel-Lint",
+            "abandoned": "php-parallel-lint/php-parallel-lint",
             "time": "2018-02-24T15:31:20+00:00"
         },
         {
@@ -7157,15 +7157,15 @@
         },
         {
             "name": "psalm/plugin-phpunit",
-            "version": "0.7",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/psalm/phpunit-psalm-plugin.git",
+                "url": "https://github.com/psalm/psalm-plugin-phpunit.git",
                 "reference": "69aaf6be9f3edecf0158d08dc073f9867e890387"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/phpunit-psalm-plugin/zipball/69aaf6be9f3edecf0158d08dc073f9867e890387",
+                "url": "https://api.github.com/repos/psalm/psalm-plugin-phpunit/zipball/69aaf6be9f3edecf0158d08dc073f9867e890387",
                 "reference": "69aaf6be9f3edecf0158d08dc073f9867e890387",
                 "shasum": ""
             },
